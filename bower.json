@@ -1,11 +1,11 @@
 {
-  "name": "hydrotoolkit-wptheme",
+  "name": "amazon-rivers-wptheme",
   "version": "0.0.1",
-  "homepage": "https://github.com/ecodigital/hydrotoolkit-wptheme",
+  "homepage": "https://github.com/ecodigital/amazon-rivers-wptheme",
   "authors": [
     "Miguel Peixe <miguel@cardume.art.br>"
   ],
-  "description": "Hydro Toolkit WordPress theme",
+  "description": "Amazon Rivers Platform WordPress theme",
   "license": "MIT",
   "ignore": [
     "**/.*",
