@@ -1,1 +1,3 @@
-# Amazon Rivers Platform WordPress Theme
+# Amazon Rivers Platform
+
+## WordPress Theme
