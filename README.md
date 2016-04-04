@@ -30,7 +30,7 @@ A custom post type for protected areas of the Pan Amazon related themes. Each th
 
 ### General features
  - Localized (i18n)
- - Support mqTranslate plugin
+ - Support qTranslate-X plugin
 
 ## DomeGIS Plugin
 
