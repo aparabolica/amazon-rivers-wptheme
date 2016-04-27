@@ -29,3 +29,32 @@ function arp_get_brand_class() {
   }
   return $class;
 }
+
+
+/*
+ * Required plugins
+ */
+require_once(TEMPLATEPATH . '/inc/class-tgm-plugin-activation.php');
+function arp_register_required_plugins() {
+  $plugins = array(
+    array(
+      'name' => 'Page Builder by SiteOrigin',
+      'slug' => 'siteorigin-panels',
+      'required' => true,
+      'force_activation' => true
+    )
+  );
+  $options = array(
+    'default_path'  => '',
+    'menu'      => 'arp-install-plugins',
+    'has_notices'  => true,
+    'dismissable'  => true,
+    'dismiss_msg'  => '',
+    'is_automatic'  => false,
+    'message'    => ''
+  );
+  tgmpa($plugins, $options);
+}
+add_action('tgmpa_register', 'arp_register_required_plugins');
+
+require_once(TEMPLATEPATH . '/inc/page-builder-hooks.php');

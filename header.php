@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
   <meta charset="utf-8" />
-  <title><?php wp_title(); ?></title>
+  <title><?php bloginfo('name'); ?></title>
   <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
   <?php wp_head(); ?>
 </head>
