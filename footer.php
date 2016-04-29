@@ -2,14 +2,7 @@
   <div class="container">
     <div class="twelve columns">
       <nav id="footer_nav">
-        <ul class="links">
-          <li><a href="#">WWF</a></li>
-          <li><a href="#">Amazon Rivers</a></li>
-          <li><a href="#">Basins</a></li>
-          <li><a href="#">Data</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Terms of use</a></li>
-        </ul>
+        <?php wp_nav_menu(array('theme_location' => 'footer_nav')); ?>
       </nav>
     </div>
   </div>

@@ -34,6 +34,21 @@
           <a class="fa fa-twitter"></a>
         </div>
       </section>
+      <section id="latest" class="page-section clean">
+        <h2 class="section-title">Latest news</h2>
+        <article class="post-item small clearfix">
+          <a href="#"><img src="http://lorempixum.com/200/200/?1" /></a>
+          <h3><a href="#">Bolivia improves decision making for sustainable hydropower planning</a></h3>
+        </article>
+        <article class="post-item small clearfix">
+          <a href="#"><img src="http://lorempixum.com/200/200/?2" /></a>
+          <h3><a href="#">Bolivia improves decision making for sustainable hydropower planning</a></h3>
+        </article>
+        <article class="post-item small clearfix">
+          <a href="#"><img src="http://lorempixum.com/200/200/?3" /></a>
+          <h3><a href="#">Bolivia improves decision making for sustainable hydropower planning</a></h3>
+        </article>
+      </section>
     </div>
   </div>
 </div>
@@ -72,6 +87,7 @@
           <header class="basin-header clearfix">
             <h3>Marañón</h3>
             <nav>
+              <h4>Select another basin:</h4>
               <a href="#">
                 <span class="fa fa-chevron-right"></span>
                 Madeira

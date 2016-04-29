@@ -20,9 +20,7 @@
           </h1>
         </div>
         <nav>
-          <a href="#">Library</a>
-          <a href="#">Pan Amazon</a>
-          <a href="#">Basins</a>
+          <?php wp_nav_menu(array('theme_location' => 'header_nav')); ?>
           <a href="#"><span class="fa fa-search"></span></a>
         </nav>
       </div>

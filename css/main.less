@@ -104,6 +104,18 @@ input[type='submit'] {
   position: relative;
   z-index: 500;
   height: 140px;
+  .brand {
+    img {
+      transition: all .2s linear;
+    }
+  }
+  &.fixed {
+    .brand {
+      img {
+        margin-top: -200px;
+      }
+    }
+  }
   &.collapsed {
     height: 50px;
     background: @blue;
@@ -143,6 +155,23 @@ input[type='submit'] {
     float: right;
     border-right: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
+    > div {
+      float: left;
+    }
+    ul {
+      float: left;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+      }
+    }
+    .menu-item {
+      float: left;
+    }
     a {
       border-left: 1px solid #ccc;
       float: left;
@@ -288,6 +317,7 @@ input[type='submit'] {
 
 #social {
   margin-top: -4rem;
+  margin-bottom: 4rem;
   background: @blue;
   text-align: center;
   padding-top: 30px;
@@ -387,7 +417,16 @@ input[type='submit'] {
     .basin-header {
       h3 {
         float: left;
+        font-size: 5.5rem;
         margin-right: 2.5rem;
+      }
+      h4 {
+        font-size: .7em;
+        font-weight: 500;
+        color: #555;
+        margin: -.3rem 0 .05rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
       }
       nav {
         margin-top: 2.5rem;
@@ -395,13 +434,17 @@ input[type='submit'] {
         a {
           display: inline-block;
           margin-right: 1rem;
-          color: #999;
+          color: #aaa;
           text-decoration: none;
           font-weight: 600;
+          font-size: 1.15em;
           .fa {
-            font-size: .7em;
+            font-size: .8em;
             margin-right: .5rem;
             color: #555;
+          }
+          &:hover {
+            color: #fff;
           }
         }
       }
@@ -505,6 +548,13 @@ input[type='submit'] {
       border-top: 1px solid #444;
       padding-top: 1.5rem;
       color: #f0f0f0;
+    }
+    .post-meta {
+      margin: -2rem 0 4rem;
+      p {
+        color: rgba(255,255,255,0.5);
+        font-style: italic;
+      }
     }
   }
   .article-share {
@@ -616,6 +666,7 @@ input[type='submit'] {
 #videos {
   margin: 0 0 4rem;
   .post-item {
+    margin-bottom: 1rem;
     img {
       width: 100%;
       height: auto;
@@ -626,6 +677,24 @@ input[type='submit'] {
       font-size: 1.5em;
       margin: 0 0 1rem;
       font-weight: 500;
+      a {
+        color: #333;
+        text-decoration: none;
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+    &.small {
+      font-size: .7em;
+      h3 {
+        font-weight: 500;
+      }
+      img {
+        float: left;
+        width: 25%;
+        margin: 0 1rem 1rem 0;
+      }
     }
   }
 }
@@ -633,6 +702,10 @@ input[type='submit'] {
 #latest {
   padding-bottom: 4rem;
   border-bottom: 1px solid #ccc;
+  &.clean {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
 }
 
 #publications,
