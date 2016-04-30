@@ -456,7 +456,7 @@ input[type='submit'] {
     }
     .info,
     .posts {
-      margin: 4rem 0;
+      margin: 3rem 0;
     }
     .button {
       display: block;
@@ -468,9 +468,14 @@ input[type='submit'] {
     }
     .posts {
       h3 {
-        font-size: 1em;
+        font-size: .9em;
         font-weight: 600;
         margin: 0 0 1rem;
+        letter-spacing: 0;
+        a {
+          color: inherit;
+          text-decoration: none;
+        }
       }
       img {
         box-shadow: 0 0 15px rgba(0,0,0,.5);
@@ -581,6 +586,11 @@ input[type='submit'] {
     margin: 0 0 4rem;
     .media-content {
       box-shadow: 0 0 3px rgba(0,0,0,0.6), 0 0 0 18px rgba(255,255,255,0.07);
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
     }
   }
   .article-content {
@@ -686,7 +696,7 @@ input[type='submit'] {
       }
     }
     &.small {
-      font-size: .7em;
+      font-size: .6em;
       h3 {
         font-weight: 500;
       }

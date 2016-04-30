@@ -3,10 +3,16 @@
 add_filter('show_admin_bar', '__return_false');
 
 function arp_setup_theme() {
+
+  add_theme_support( 'post-thumbnails' );
+
+  add_image_size('wide-thumbnail', 400, 225, true);
+
   register_nav_menus(array(
     'header_nav' => __('Header navigation', 'arp'),
     'footer_nav' => __('Footer navigation', 'arp')
   ));
+  
 }
 add_action('after_setup_theme', 'arp_setup_theme');
 

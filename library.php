@@ -18,67 +18,67 @@
       </div>
     </div>
   </header>
-  <section id="latest" class="page-section">
-    <div class="container">
-      <div class="twelve columns">
-        <h2 class="section-title">Latest news</h2>
-      </div>
-    </div>
-    <div class="post-list latest-list">
+  <?php
+  query_posts('posts_per_page=3');
+  if(have_posts()) :
+    ?>
+    <section id="latest" class="page-section">
       <div class="container">
-        <div class="four columns">
-          <article class="post-item">
-            <img src="http://lorempixum.com/400/225?1" />
-            <h3>Phasellus pellentesque fringilla odio, sed gravida metus congue in. Nulla facilisi.</h3>
-          </article>
-        </div>
-        <div class="four columns">
-          <article class="post-item">
-            <img src="http://lorempixum.com/400/225?2" />
-            <h3>Phasellus pellentesque fringilla odio, sed gravida metus congue in. Nulla facilisi.</h3>
-          </article>
-        </div>
-        <div class="four columns">
-          <article class="post-item">
-            <img src="http://lorempixum.com/400/225?3" />
-            <h3>Phasellus pellentesque fringilla odio, sed gravida metus congue in. Nulla facilisi.</h3>
-          </article>
+        <div class="twelve columns">
+          <h2 class="section-title"><?php _e('Latest news', 'arp'); ?></h2>
         </div>
       </div>
-    </ul>
-  </section>
+      <div class="post-list latest-list">
+        <div class="container">
+          <?php
+          while(have_posts()) :
+            the_post();
+            ?>
+            <div class="four columns">
+              <article class="post-item">
+                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('wide-thumbnail'); ?></a>
+                <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+              </article>
+            </div>
+            <?php
+          endwhile;
+          ?>
+        </div>
+      </div>
+    </section>
+    <?php
+  endif;
+  wp_reset_query();
+  ?>
   <div class="container">
     <div class="six columns">
-      <section id="publications" class="page-section">
-        <h2 class="section-title">Publications</h2>
-        <article class="post-item clearfix">
-          <div class="three columns">
-            <img src="http://lorempixum.com/400/400?1" />
-          </div>
-          <div class="nine columns">
-            <h3>Phasellus pellentesque fringilla odio, sed gravida metus congue in. Nulla facilisi.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vehicula vulputate fermentum. Sed porttitor dui est, at pellentesque elit posuere at.</p>
-          </div>
-        </article>
-        <article class="post-item clearfix">
-          <div class="three columns">
-            <img src="http://lorempixum.com/400/400?2" />
-          </div>
-          <div class="nine columns">
-            <h3>Phasellus pellentesque fringilla odio, sed gravida metus congue in. Nulla facilisi.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vehicula vulputate fermentum. Sed porttitor dui est, at pellentesque elit posuere at.</p>
-          </div>
-        </article>
-        <article class="post-item clearfix">
-          <div class="three columns">
-            <img src="http://lorempixum.com/400/400?3" />
-          </div>
-          <div class="nine columns">
-            <h3>Phasellus pellentesque fringilla odio, sed gravida metus congue in. Nulla facilisi.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vehicula vulputate fermentum. Sed porttitor dui est, at pellentesque elit posuere at.</p>
-          </div>
-        </article>
-      </section>
+      <?php
+      query_posts('posts_per_page=3');
+      if(have_posts()) :
+        ?>
+        <section id="publications" class="page-section">
+          <h2 class="section-title"><?php _e('Publications', 'arp'); ?></h2>
+          <?php
+          while(have_posts()) :
+            the_post();
+            ?>
+            <article class="post-item clearfix">
+              <div class="three columns">
+                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+              </div>
+              <div class="nine columns">
+                <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                <p><?php the_excerpt(); ?></p>
+              </div>
+            </article>
+            <?php
+          endwhile;
+          ?>
+        </section>
+        <?php
+      endif;
+      wp_reset_query();
+      ?>
     </div>
     <div class="two columns">
       <section id="share" class="page-section">
@@ -89,21 +89,36 @@
         </div>
       </section>
       <section id="join" class="page-section">
-        <h2 class="section-title">Join us</h2>
+        <h2 class="section-title">WWF</h2>
         <div class="section-box">
-          <p>Sed porttitor dui est, at pellente elit posuere at.</p>
-          <a class="button" href="#">Join now</a>
+          <p><?php _e('Help stop the degradation of our planet\'s natural environment, and build a future in which people live in harmony with nature.', 'arp'); ?></p>
+          <a class="button" href="#">Take action</a>
         </div>
     </div>
     <div class="four columns">
-      <section id="videos" class="page-section">
-        <h2 class="section-title">Videos</h2>
-        <article class="post-item">
-          <img src="http://lorempixum.com/400/225?4" />
-          <h3>Phasellus pellentesque fringilla odio, sed gravida metus congue in. Nulla facilisi.</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vehicula vulputate fermentum. Sed porttitor dui est, at pellentesque elit posuere at.</p>
-        </article>
-      </section>
+      <?php
+      query_posts('posts_per_page=1');
+      if(have_posts()) :
+        ?>
+        <section id="videos" class="page-section">
+          <h2 class="section-title"><?php _e('Videos', 'arp'); ?></h2>
+          <?php
+          while(have_posts()) :
+            the_post();
+            ?>
+            <article class="post-item">
+              <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('wide-thumbnail'); ?></a>
+              <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+              <?php the_excerpt(); ?>
+            </article>
+            <?php
+          endwhile;
+          ?>
+        </section>
+        <?php
+      endif;
+      wp_reset_query();
+      ?>
     </div>
   </div>
 </article>

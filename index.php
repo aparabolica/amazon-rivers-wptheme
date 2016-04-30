@@ -36,18 +36,21 @@
       </section>
       <section id="latest" class="page-section clean">
         <h2 class="section-title">Latest news</h2>
-        <article class="post-item small clearfix">
-          <a href="#"><img src="http://lorempixum.com/200/200/?1" /></a>
-          <h3><a href="#">Bolivia improves decision making for sustainable hydropower planning</a></h3>
-        </article>
-        <article class="post-item small clearfix">
-          <a href="#"><img src="http://lorempixum.com/200/200/?2" /></a>
-          <h3><a href="#">Bolivia improves decision making for sustainable hydropower planning</a></h3>
-        </article>
-        <article class="post-item small clearfix">
-          <a href="#"><img src="http://lorempixum.com/200/200/?3" /></a>
-          <h3><a href="#">Bolivia improves decision making for sustainable hydropower planning</a></h3>
-        </article>
+        <?php
+        query_posts('posts_per_page=3');
+        if(have_posts()) :
+          while(have_posts()) :
+            the_post();
+            ?>
+            <article class="post-item small clearfix">
+              <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
+              <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+            </article>
+            <?php
+          endwhile;
+        endif;
+        wp_reset_query();
+        ?>
       </section>
     </div>
   </div>
@@ -85,7 +88,7 @@
       <div class="six columns">
         <div class="info">
           <header class="basin-header clearfix">
-            <h3>Marañón</h3>
+            <h3>Tapajós</h3>
             <nav>
               <h4>Select another basin:</h4>
               <a href="#">
@@ -94,24 +97,31 @@
               </a>
               <a href="#">
                 <span class="fa fa-chevron-right"></span>
-                Tapajós
+                Marañón
               </a>
             </nav>
           </header>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vehicula vulputate fermentum. Sed porttitor dui est, at pellentesque elit posuere at. Nunc vel elit eu purus accumsan fringilla. Etiam nec tempor mauris.</p>
+          <p>A bacia do rio Tapajós abrange 492.000 km2 nos estados de Mato Grosso, Pará, Amazonas e uma pequena porção de Rondônia, no Brasil.</p>
         </div>
         <div class="posts clearfix">
-          <div class="six columns">
-            <img src="http://lorempixum.com/700/350?1" />
-            <h3>Sed porttitor dui est, at pellentesque elit posuere at.</h3>
-          </div>
-          <div class="six columns">
-            <img src="http://lorempixum.com/700/350?2" />
-            <h3>Sed porttitor dui est, at pellentesque elit posuere at.</h3>
-          </div>
+          <?php
+          query_posts('posts_per_page=2');
+          if(have_posts()) :
+            while(have_posts()) :
+              the_post();
+              ?>
+              <div class="six columns">
+                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('wide-thumbnail'); ?></a>
+                <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+              </div>
+              <?php
+            endwhile;
+          endif;
+          wp_reset_query();
+          ?>
         </div>
         <p>
-          <a class="button">More stories on Marañón</a>
+          <a class="button">More stories on Tapajós</a>
         </p>
       </div>
       <div class="six columns">
