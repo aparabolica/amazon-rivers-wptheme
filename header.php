@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
   <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class( $class ); ?>>
   <header id="masthead" class="<?php echo arp_get_header_class(); ?>">
     <div class="container">
       <div class="twelve columns">

@@ -12,7 +12,7 @@ function arp_setup_theme() {
     'header_nav' => __('Header navigation', 'arp'),
     'footer_nav' => __('Footer navigation', 'arp')
   ));
-  
+
 }
 add_action('after_setup_theme', 'arp_setup_theme');
 
@@ -34,7 +34,10 @@ add_action('wp_enqueue_scripts', 'arp_scripts');
 function arp_get_header_class() {
   $class = '';
   if(!is_home() && !is_front_page()) {
-    $class = 'collapsed';
+    $class .= ' collapsed';
+  }
+  if(is_page_template('basins.php') || is_page_template('map.php')) {
+    $class .= ' transparent';
   }
   return $class;
 }
@@ -42,7 +45,7 @@ function arp_get_header_class() {
 function arp_get_brand_class() {
   $class = '';
   if(!is_home() && !is_front_page()) {
-    $class = 'small';
+    $class .= ' small';
   }
   return $class;
 }
