@@ -19,4 +19,22 @@
   </div>
 </section>
 
+<section id="basins-selector">
+  <div class="container">
+    <div class="three columns">
+      <div class="basins-selector-content">
+        <div class="basin-item">
+          <h2>Tapajós</h2>
+        </div>
+        <div class="basin-item">
+          <h2>Madeira</h2>
+        </div>
+        <div class="basin-item">
+          <h2>Marañón</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <?php //get_footer(); ?>
