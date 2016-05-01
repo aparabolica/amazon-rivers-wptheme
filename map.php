@@ -1,6 +1,6 @@
 <?php
 /*
- * Template name: Basins page
+ * Template name: Map Template
  */
 ?>
 <?php get_header(); ?>
