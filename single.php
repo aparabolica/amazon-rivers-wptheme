@@ -17,7 +17,7 @@
             <h3>Share this story</h3>
             <ul>
               <li>
-                <div class="fb-like" data-href="http://wwf.org.br" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+                <div class="fb-like" data-href="<?php the_permalink(); ?>" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
               </li>
               <li>
                 <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://wwf.org.br" data-via="wwf">Tweet</a>
