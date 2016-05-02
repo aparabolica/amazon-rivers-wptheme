@@ -119,6 +119,80 @@ input[type='submit'] {
 .arp-map {
   width: 100%;
   height: 100%;
+  position: relative;
+  overflow: hidden;
+  iframe {
+    width: 200%;
+    height: 200%;
+    margin-top: -33.3333%;
+    margin-left: -50%;
+  }
+  .tooltip {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 40%;
+    background: #fff;
+    width: 300px;
+    height: 300px;
+    margin-top: -150px;
+    // margin-left: -100px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    &:before {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      left: -10px;
+      margin-top: -10px;
+      background: #fff;
+      top: 50%;
+      transform: rotate(45deg);
+    }
+    .tooltip-content {
+      position: absolute;
+      top: 2rem;
+      left: 2rem;
+      right: 1rem;
+      bottom: 2rem;
+      overflow: auto;
+      h2 {
+        font-size: .9em;
+        color: #999;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin: 0 0 .5rem;
+      }
+      p {
+        font-size: 1.1em;
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
+        color: #333;
+        border-bottom: 1px solid #ddd;
+      }
+    }
+  }
+  .legend {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 150px;
+    background: #fff;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    padding: .5rem 1.5rem;
+    p {
+      margin: 1rem 0;
+      img,
+      .sqr {
+        border-radius: 4px;
+        float: left;
+        display: block;
+        height: 20px;
+        width: 20px;
+        margin-right: 10px;
+      }
+    }
+  }
 }
 
 #masthead {
@@ -383,16 +457,13 @@ input[type='submit'] {
   overflow: hidden;
   width: 100%;
   height: 600px;
-  iframe {
-    width: 200%;
-    height: 200%;
-    margin-top: -33.3333%;
-    margin-left: -50%;
-  }
   .map-info {
     background: #333;
     padding: 2rem 0;
-    position: relative;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
     z-index: 2;
     h2 {
       margin: 0;
@@ -510,12 +581,6 @@ input[type='submit'] {
       width: 100%;
       height: 570px;
       box-shadow: 0 0 15px rgba(0,0,0,0.5);
-      iframe {
-        width: 200%;
-        height: 200%;
-        margin-left: -50%;
-        margin-top: -33.3333%;
-      }
     }
   }
   img {
@@ -774,58 +839,6 @@ input[type='submit'] {
   right: 0;
   bottom: 0;
   overflow: hidden;
-  iframe {
-    width: 200%;
-    height: 200%;
-    margin-top: -33.3333%;
-    margin-left: -50%;
-  }
-}
-
-.tooltip {
-  position: absolute;
-  z-index: 2;
-  top: 50%;
-  left: 40%;
-  background: #fff;
-  width: 300px;
-  height: 300px;
-  margin-top: -150px;
-  // margin-left: -100px;
-  box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
-  &:before {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    left: -10px;
-    margin-top: -10px;
-    background: #fff;
-    top: 50%;
-    transform: rotate(45deg);
-  }
-  .tooltip-content {
-    position: absolute;
-    top: 2rem;
-    left: 2rem;
-    right: 1rem;
-    bottom: 2rem;
-    overflow: auto;
-    h2 {
-      font-size: .9em;
-      color: #999;
-      text-transform: uppercase;
-      font-weight: 600;
-      margin: 0 0 .5rem;
-    }
-    p {
-      font-size: 1.1em;
-      padding-bottom: 1.5rem;
-      margin-bottom: 1.5rem;
-      color: #333;
-      border-bottom: 1px solid #ddd;
-    }
-  }
 }
 
 #colophon {
