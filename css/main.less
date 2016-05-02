@@ -5,6 +5,22 @@ body {
   overflow-x: hidden;
 }
 
+::-webkit-scrollbar{
+  width: 15px;
+  background-color: #fff;
+}
+::-webkit-scrollbar-thumb{
+  background-color: @blue;
+  border-radius: 15px;
+  border: 3.5px solid #fff;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: lighten(@blue, 10%);
+}
+::-webkit-scrollbar-thumb:active{
+  background-color: lighten(@blue, 15%);
+}
+
 .clearfix:after {
   content: "";
   display: table;
@@ -100,6 +116,11 @@ input[type='submit'] {
   }
 }
 
+.arp-map {
+  width: 100%;
+  height: 100%;
+}
+
 #masthead {
   // background: #86badd;
   // padding-bottom: 40px;
@@ -183,7 +204,7 @@ input[type='submit'] {
       padding: 15px;
       line-height: 1;
       font-weight: 600;
-      font-size: .7em;
+      font-size: .8em;
       text-transform: uppercase;
       position: relative;
       outline: none;
@@ -419,7 +440,7 @@ input[type='submit'] {
     .basin-header {
       h3 {
         float: left;
-        font-size: 5.5rem;
+        font-size: 6rem;
         margin-right: 2.5rem;
       }
       h4 {
@@ -701,6 +722,7 @@ input[type='submit'] {
       font-size: .6em;
       h3 {
         font-weight: 500;
+        letter-spacing: 0;
       }
       img {
         float: left;
@@ -760,7 +782,7 @@ input[type='submit'] {
   position: absolute;
   z-index: 2;
   top: 50%;
-  left: 50%;
+  left: 40%;
   background: #fff;
   width: 300px;
   height: 300px;
@@ -832,18 +854,57 @@ input[type='submit'] {
   }
 }
 
+.page-template-basins {
+  #main-map {
+    left: 30%;
+  }
+}
+
+#basins-selector::-webkit-scrollbar{
+  width: 10px;
+  background-color: transparent;
+}
+
+#basins-selector::-webkit-scrollbar-thumb{
+  background-color: @blue;
+  border-radius: 15px;
+  border: 1px solid #444;
+}
+#basins-selector::-webkit-scrollbar-thumb:hover{
+  background-color: lighten(@blue, 10%);
+}
+#basins-selector::-webkit-scrollbar-thumb:active{
+  background-color: lighten(@blue, 15%);
+}
+
 #basins-selector {
+  width: 30%;
   position: absolute;
-  top: 200px;
+  top: 0;
   left: 0;
-  right: 0;
-  pointer-events: none;
+  bottom: 0;
+  box-shadow: 0 0 10px rgba(0,0,0,1);
+  background: #222 url('../img/water_bg.jpg') bottom center no-repeat;
+  overflow: auto;
   .basins-selector-content {
-    background: #222 url('../img/water_bg.jpg') bottom center no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #444;
   }
   .basin-item {
-    padding: 2rem;
+    padding: 4rem 2rem;
     color: #fff;
-    pointer-events: auto;
+    border-bottom: 1px solid #444;
+    background: rgba(255,255,255,0.03);
+    &:hover {
+      background: rgba(0,0,0,0.1);
+    }
+    h2 {
+      font-weight: 600;
+      font-size: 2.5em;
+      margin: 0;
+    }
   }
 }
