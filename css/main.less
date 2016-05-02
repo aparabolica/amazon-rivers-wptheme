@@ -932,6 +932,7 @@ input[type='submit'] {
   background-color: lighten(@blue, 15%);
 }
 
+
 #basins-selector {
   width: 30%;
   position: absolute;
@@ -957,8 +958,23 @@ input[type='submit'] {
     text-transform: uppercase;
     font-weight: 600;
   }
+  &.selected {
+    .basins-selector-content {
+      border-top: 0;
+    }
+    h3 {
+      opacity: 0;
+    }
+    .basin-item {
+      padding: 2rem;
+      h2 {
+        font-size: 1.5em;
+      }
+    }
+  }
   .basin-item {
     padding: 4rem 2rem;
+    transition: all .2s linear;
     color: #fff;
     border-bottom: 1px solid #444;
     background: rgba(255,255,255,0.03);
@@ -968,10 +984,29 @@ input[type='submit'] {
     &:hover {
       background: rgba(0,0,0,0.1);
     }
+    &.active {
+      .basin-description {
+        height: 320px;
+        padding: 2rem;
+      }
+    }
     h2 {
+      cursor: pointer;
       font-weight: 600;
       font-size: 2.5em;
       margin: 0;
+      opacity: 1;
+      transition: all .2s linear;
+    }
+    .basin-description {
+      transition: all .2s linear;
+      overflow: auto;
+      height: 0;
+      margin: 1rem 0 0;
+      background: #fff;
+      color: #333;
+      margin: 2rem -2rem -2rem;
+      padding: 0;
     }
   }
 }
