@@ -6,7 +6,7 @@
     <header class="article-header">
       <div class="container">
         <div class="nine columns">
-          <h2>Video</h2>
+          <h2><?php the_category(' '); ?></h2>
           <h1><?php the_title(); ?></h1>
           <div class="post-meta">
             <p class="date"><?php the_date(); ?></p>
