@@ -127,6 +127,33 @@ input[type='submit'] {
     margin-top: -33.3333%;
     margin-left: -50%;
   }
+  .arp-bottom,
+  .arp-right,
+  .arp-top,
+  .arp-left {
+    position: absolute;
+  }
+  .arp-bottom {
+    bottom: 0;
+  }
+  .arp-left {
+    left: 0;
+  }
+  .arp-right {
+    right: 0;
+  }
+  .arp-top {
+    top: 0;
+  }
+  .arp-map-box {
+    width: 150px;
+    background: #fff;
+    background: #fff;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    padding: 1rem 1.5rem;
+    color: #666;
+    margin: 15px;
+  }
   .tooltip {
     position: absolute;
     z-index: 2;
@@ -173,13 +200,7 @@ input[type='submit'] {
     }
   }
   .legend {
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
     width: 150px;
-    background: #fff;
-    box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
-    padding: .5rem 1.5rem;
     p {
       margin: 1rem 0;
       img,
@@ -190,6 +211,20 @@ input[type='submit'] {
         height: 20px;
         width: 20px;
         margin-right: 10px;
+      }
+    }
+  }
+  .download {
+    p {
+      margin: 0;
+      font-weight: 600;
+      text-align: center;
+      a {
+        span {
+          padding-right: 10px;
+        }
+        color: inherit;
+        text-decoration: none;
       }
     }
   }
@@ -579,8 +614,11 @@ input[type='submit'] {
       overflow: hidden;
       position: relative;
       width: 100%;
-      height: 570px;
+      height: 590px;
       box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      .tooltip {
+        display: none !important;
+      }
     }
   }
   img {
@@ -902,6 +940,7 @@ input[type='submit'] {
   bottom: 0;
   box-shadow: 0 0 10px rgba(0,0,0,1);
   background: #222 url('../img/water_bg.jpg') bottom center no-repeat;
+  color: #fff;
   overflow: auto;
   .basins-selector-content {
     position: absolute;
@@ -910,11 +949,22 @@ input[type='submit'] {
     right: 0;
     border-top: 1px solid #444;
   }
+  h3 {
+    margin: 2rem;
+    color: #555;
+    letter-spacing: .20rem;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
   .basin-item {
     padding: 4rem 2rem;
     color: #fff;
     border-bottom: 1px solid #444;
     background: rgba(255,255,255,0.03);
+    &:first-child {
+      border-top: 1px solid #444;
+    }
     &:hover {
       background: rgba(0,0,0,0.1);
     }

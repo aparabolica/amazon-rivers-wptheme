@@ -11,11 +11,12 @@
 
 <section id="basins-selector">
   <div class="basins-selector-content">
-    <div class="basin-item">
-      <h2>Tapajós</h2>
-    </div>
+    <h3><?php _e('Select a basin for details:', 'arp'); ?></h3>
     <div class="basin-item">
       <h2>Madeira</h2>
+    </div>
+    <div class="basin-item">
+      <h2>Tapajós</h2>
     </div>
     <div class="basin-item">
       <h2>Marañón</h2>

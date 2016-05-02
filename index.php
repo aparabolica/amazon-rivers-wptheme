@@ -116,7 +116,7 @@
       </div>
       <div class="six columns">
         <div class="map">
-          <iframe src="http://infoamazonia.org/embed/?map_only=1&map_id=12799&lat=-5.4082109285908295&lon=-58.06274414062499&zoom=5" frameborder="0"></iframe>
+          <?php get_template_part('parts/map'); ?>
         </div>
       </div>
     </div>
