@@ -7,6 +7,7 @@ function arp_setup_theme() {
   add_theme_support( 'post-thumbnails' );
 
   add_image_size('wide-thumbnail', 400, 225, true);
+  add_image_size('highlight', 1100, 500, true);
 
   register_nav_menus(array(
     'header_nav' => __('Header navigation', 'arp'),
@@ -64,6 +65,12 @@ function arp_register_required_plugins() {
       'slug' => 'siteorigin-panels',
       'required' => true,
       'force_activation' => true
+    ),
+    array(
+      'name' => 'Advanced Custom Fields',
+      'slug' => 'advanced-custom-fields',
+      'required' => true,
+      'force_activation' => true
     )
   );
   $options = array(
@@ -79,4 +86,9 @@ function arp_register_required_plugins() {
 }
 add_action('tgmpa_register', 'arp_register_required_plugins');
 
+// ACF Settings
+define( 'ACF_LITE', true );
+
 require_once(TEMPLATEPATH . '/inc/page-builder-hooks.php');
+
+require_once(TEMPLATEPATH . '/inc/carousel.php');
