@@ -42,7 +42,7 @@ class ARP_Carousel {
       'capability_type'    => 'post',
       'has_archive'        => true,
       'hierarchical'       => false,
-      'menu_position'      => null,
+      'menu_position'      => 3,
       'supports'           => array( 'title', 'author', 'thumbnail', 'excerpt' )
     );
 

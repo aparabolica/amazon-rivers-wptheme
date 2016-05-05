@@ -7,7 +7,7 @@ function arp_setup_theme() {
   add_theme_support( 'post-thumbnails' );
 
   add_image_size('wide-thumbnail', 400, 225, true);
-  add_image_size('highlight', 1100, 500, true);
+  add_image_size('highlight', 860, 392, true);
 
   register_nav_menus(array(
     'header_nav' => __('Header navigation', 'arp'),
@@ -71,6 +71,13 @@ function arp_register_required_plugins() {
       'slug' => 'advanced-custom-fields',
       'required' => true,
       'force_activation' => true
+    ),
+    array(
+      'name' => 'DomeGIS',
+      'slug' => 'domegis-wordpress-plugin',
+      'required' => true,
+      'force_activation' => true,
+      'source' => 'https://github.com/ecodigital/domegis-wordpress-plugin/archive/master.zip'
     )
   );
   $options = array(
@@ -87,8 +94,9 @@ function arp_register_required_plugins() {
 add_action('tgmpa_register', 'arp_register_required_plugins');
 
 // ACF Settings
-define( 'ACF_LITE', true );
+// define( 'ACF_LITE', true );
 
 require_once(TEMPLATEPATH . '/inc/page-builder-hooks.php');
 
 require_once(TEMPLATEPATH . '/inc/carousel.php');
+require_once(TEMPLATEPATH . '/inc/basins.php');
