@@ -61,12 +61,6 @@ require_once(TEMPLATEPATH . '/inc/class-tgm-plugin-activation.php');
 function arp_register_required_plugins() {
   $plugins = array(
     array(
-      'name' => 'Page Builder by SiteOrigin',
-      'slug' => 'siteorigin-panels',
-      'required' => true,
-      'force_activation' => true
-    ),
-    array(
       'name' => 'Advanced Custom Fields',
       'slug' => 'advanced-custom-fields',
       'required' => true,
