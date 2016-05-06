@@ -9,6 +9,7 @@ class ARP_Basins {
   function __construct() {
     add_action('init', array($this, 'register_post_type'));
     add_action('init', array($this, 'register_field_group'));
+    add_filter('the_permalink', array($this, 'the_permalink'));
   }
 
   function register_post_type() {
@@ -38,7 +39,7 @@ class ARP_Basins {
       'show_ui'            => true,
       'show_in_menu'       => true,
       'query_var'          => true,
-      'rewrite'            => array( 'slug' => 'basin' ),
+      'rewrite'            => array( 'slug' => 'basins' ),
       'capability_type'    => 'post',
       'has_archive'        => true,
       'hierarchical'       => false,
@@ -48,6 +49,14 @@ class ARP_Basins {
 
     register_post_type( 'basin', $args );
 
+  }
+
+  function the_permalink($url) {
+    global $post;
+    if(get_post_type() == 'basin') {
+      $url = get_post_type_archive_link('basin') . '#' . $post->post_name;
+    }
+    return $url;
   }
 
   function register_field_group() {

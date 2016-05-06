@@ -100,6 +100,7 @@
   // Basin selector
   $(document).ready(function() {
     var selector = $('#basins-selector');
+    var basin = window.location.hash.substr(1);
     if(selector.length) {
       selector.each(function() {
         var sel = $(this);
@@ -112,7 +113,10 @@
           } else {
             sel.find('.basin-item').removeClass('active');
           }
-        })
+        });
+        if(basin) {
+          sel.find('#' + basin + ' h2').click();
+        }
       });
     }
   });
