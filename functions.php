@@ -40,7 +40,7 @@ function arp_get_header_class() {
   if(!is_home() && !is_front_page()) {
     $class .= ' collapsed';
   }
-  if(is_page_template('basins.php') || is_page_template('map.php')) {
+  if(is_page_template('basins.php') || is_page_template('map.php') || is_post_type_archive('basin')) {
     $class .= ' transparent';
   }
   return $class;
