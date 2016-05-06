@@ -33,14 +33,11 @@ class ARP_Carousel {
     $args = array(
       'labels'             => $labels,
       'description'        => __( 'ARP Carousel', 'arp' ),
-      'public'             => true,
-      'publicly_queryable' => true,
+      'public'             => false,
       'show_ui'            => true,
       'show_in_menu'       => true,
       'query_var'          => true,
-      'rewrite'            => array( 'slug' => 'carousel-item' ),
       'capability_type'    => 'post',
-      'has_archive'        => true,
       'hierarchical'       => false,
       'menu_position'      => 3,
       'supports'           => array( 'title', 'author', 'thumbnail', 'excerpt' )
