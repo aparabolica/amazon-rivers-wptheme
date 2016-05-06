@@ -4,6 +4,7 @@ add_filter('show_admin_bar', '__return_false');
 
 function arp_setup_theme() {
 
+  add_theme_support( 'custom-header' );
   add_theme_support( 'post-thumbnails' );
 
   add_image_size('wide-thumbnail', 400, 225, true);
@@ -34,6 +35,17 @@ function arp_scripts() {
   wp_enqueue_script('site');
 }
 add_action('wp_enqueue_scripts', 'arp_scripts');
+
+function arp_custom_header() {
+  $img = get_header_image();
+  if($img) { ?>
+    <style>
+      #welcome:before { background-image: url('<?php echo $img; ?>') };
+    </style>
+  <?php
+  }
+}
+add_action('wp_footer', 'arp_custom_header');
 
 function arp_get_header_class() {
   $class = '';
