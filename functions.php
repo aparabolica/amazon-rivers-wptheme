@@ -70,7 +70,7 @@ function arp_register_required_plugins() {
       'name' => 'DomeGIS',
       'slug' => 'domegis-wordpress-plugin',
       'required' => true,
-      'force_activation' => true,
+      'force_activation' => false,
       'source' => 'https://github.com/ecodigital/domegis-wordpress-plugin/archive/master.zip'
     )
   );
