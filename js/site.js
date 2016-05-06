@@ -17,6 +17,25 @@
     }
   });
 
+  // Search
+  $(document).ready(function() {
+    var $search = $('#masthead .search');
+    if($search.length) {
+      $search.find('a').on('click', function(e) {
+        e.preventDefault();
+        $search.addClass('active');
+        $search.find('input').focus();
+      });
+      $search.find('a').on('focusin', function() {
+        $search.addClass('active');
+        $search.find('input').focus();
+      });
+      $search.find('input').on('focusout', function() {
+        $search.removeClass('active');
+      });
+    }
+  });
+
   // Carousel
   $(document).ready(function() {
     var carousels = $('#carousel');

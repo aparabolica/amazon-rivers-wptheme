@@ -21,7 +21,10 @@
         </div>
         <nav>
           <?php wp_nav_menu(array('theme_location' => 'header_nav')); ?>
-          <a href="#"><span class="fa fa-search"></span></a>
+          <form class="search" action="<?php echo home_url('/'); ?>">
+            <a href="#"><span class="fa fa-search"></span></a>
+            <input type="text" name="s" placeholder="<?php _e('Search anything...', 'arp'); ?>" value="<?php if(isset($_GET['s'])) echo $_GET['s']; ?>" />
+          </form>
         </nav>
       </div>
     </div>
