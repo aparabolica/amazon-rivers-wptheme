@@ -81,15 +81,6 @@ class ARP_Basins {
               'group_no' => 0,
             ),
           ),
-          array (
-            array (
-            'param' => 'post_type',
-            'operator' => '==',
-            'value' => 'carousel',
-            'order_no' => 0,
-            'group_no' => 1,
-            ),
-          ),
         ),
         'options' => array (
           'position' => 'normal',

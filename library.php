@@ -19,7 +19,7 @@
     </div>
   </header>
   <?php
-  query_posts('posts_per_page=3');
+  query_posts('posts_per_page=3&category_name=news');
   if(have_posts()) :
     ?>
     <section id="latest" class="page-section">
@@ -53,7 +53,7 @@
   <div class="container">
     <div class="six columns">
       <?php
-      query_posts('posts_per_page=3');
+      query_posts('posts_per_page=3&category_name=publication');
       if(have_posts()) :
         ?>
         <section id="publications" class="page-section">
@@ -97,7 +97,7 @@
     </div>
     <div class="four columns">
       <?php
-      query_posts('posts_per_page=1');
+      query_posts('posts_per_page=1&category_name=video');
       if(have_posts()) :
         ?>
         <section id="videos" class="page-section">

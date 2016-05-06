@@ -32,12 +32,11 @@
         <div class="twelve columns">
           <div class="media-content">
             <?php
-            if(has_post_thumbnail()) :
+            $video = arp_get_video();
+            if($video) :
+              echo $video;
+            elseif(has_post_thumbnail()) :
               the_post_thumbnail();
-            else :
-              ?>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/1gJNumoh7HY" frameborder="0" allowfullscreen></iframe>
-              <?php
             endif;
             ?>
           </div>

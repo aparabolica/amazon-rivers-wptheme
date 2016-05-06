@@ -5,20 +5,20 @@
     <div class="container">
       <div class="nine columns">
         <h1><?php
-					if( is_tag() || is_category() || is_tax() ) :
-						printf( __( '%s', 'arp' ), single_term_title() );
+          if( is_tag() || is_category() || is_tax() ) :
+            printf( __( '%s', 'arp' ), single_term_title() );
           elseif( is_search() ) :
             printf( __( 'Search results for: %s', 'arp' ), $_GET['s'] );
-					elseif ( is_day() ) :
-						printf( __( 'Daily Archives: %s', 'arp' ), get_the_date() );
-					elseif ( is_month() ) :
-						printf( __( 'Monthly Archives: %s', 'arp' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'arp' ) ) );
-					elseif ( is_year() ) :
-						printf( __( 'Yearly Archives: %s', 'arp' ), get_the_date( _x( 'Y', 'yearly archives date format', 'arp' ) ) );
-					else :
-						_e( 'Archives', 'arp' );
-					endif;
-				?></h1>
+          elseif ( is_day() ) :
+            printf( __( 'Daily Archives: %s', 'arp' ), get_the_date() );
+          elseif ( is_month() ) :
+            printf( __( 'Monthly Archives: %s', 'arp' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'arp' ) ) );
+          elseif ( is_year() ) :
+            printf( __( 'Yearly Archives: %s', 'arp' ), get_the_date( _x( 'Y', 'yearly archives date format', 'arp' ) ) );
+          else :
+            _e( 'Archives', 'arp' );
+          endif;
+        ?></h1>
       </div>
     </div>
   </header>

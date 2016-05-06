@@ -47,6 +47,14 @@ class ARP_Carousel {
 
   }
 
+  function get_text_field() {
+    $field = 'text';
+    if(function_exists('qtranxf_generateLanguageSelectCode')) {
+      $field = 'qtranslate_text';
+    }
+    return $field;
+  }
+
   function register_field_group() {
     if(function_exists("register_field_group")) {
       register_field_group(array (
@@ -57,7 +65,7 @@ class ARP_Carousel {
             'key' => 'field_carousel_url',
             'label' => 'URL',
             'name' => 'url',
-            'type' => 'text',
+            'type' => $this->get_text_field(),
             'instructions' => __('Enter the destination url for this carousel item', 'arp'),
             'required' => 1,
             'default_value' => '',
