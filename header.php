@@ -25,6 +25,11 @@
             <a href="#"><span class="fa fa-search"></span></a>
             <input type="text" name="s" placeholder="<?php _e('Search anything...', 'arp'); ?>" value="<?php if(isset($_GET['s'])) echo $_GET['s']; ?>" />
           </form>
+          <?php if(function_exists('qtranxf_generateLanguageSelectCode')) : ?>
+            <div class="language-selector">
+              <?php echo qtranxf_generateLanguageSelectCode('image'); ?>
+            </div>
+          <?php endif; ?>
         </nav>
       </div>
     </div>
