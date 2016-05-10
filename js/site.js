@@ -105,7 +105,12 @@
       selector.each(function() {
         var sel = $(this);
         sel.find('.basin-item h2').on('click', function() {
-          sel.removeClass('selected')
+          sel.removeClass('selected');
+          var name = $(this).text();
+          var id = $(this).parents('.basin-item').attr('id');
+          $('.related-stories .basin-posts').hide();
+          $('.related-stories #basin-' + id + '-posts').show();
+          $('body').find('.basin-name').text(name);
           if(!$(this).parents('.basin-item').hasClass('active')) {
             sel.find('.basin-item').removeClass('active');
             $(this).parents('.basin-item').addClass('active');

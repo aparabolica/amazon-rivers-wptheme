@@ -27,22 +27,28 @@
         </div>
       </div>
     </header>
-    <section class="article-media">
-      <div class="container">
-        <div class="twelve columns">
-          <div class="media-content">
-            <?php
-            $video = arp_get_video();
-            if($video) :
-              echo $video;
-            elseif(has_post_thumbnail()) :
-              the_post_thumbnail();
-            endif;
-            ?>
+    <?php
+    $video = arp_get_video();
+    if($video || has_post_thumbnail()) :
+      ?>
+      <section class="article-media">
+        <div class="container">
+          <div class="twelve columns">
+            <div class="media-content">
+              <?php
+              if($video) :
+                echo $video;
+              elseif(has_post_thumbnail()) :
+                the_post_thumbnail();
+              endif;
+              ?>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <?php
+    endif;
+    ?>
     <section class="article-content">
       <div class="container">
         <div class="eight columns offset-by-two">
