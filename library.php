@@ -11,9 +11,6 @@
       <div class="twelve columns">
         <section id="story-map">
           <iframe frameborder="0" src="http://panda.maps.arcgis.com/apps/MapSeries/index.html?appid=7919d0e1e962438d8824b726c90ab4a6&webmap=e336462261924c2b8a0307d740ebb35d"></iframe>
-          <div class="example">
-            <p>Example story map</p>
-          </div>
         </section>
       </div>
     </div>
