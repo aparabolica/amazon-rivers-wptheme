@@ -64,7 +64,7 @@ if(have_posts()) :
             ?>
           <?php endwhile; ?>
           <p>
-            <a class="button more"><?php _e('More stories on', 'arp'); ?> <span class="current-name"></span></a>
+            <a class="button more"><?php _e('Learn more about', 'arp'); ?> <span class="current-name"></span></a>
           </p>
         </div>
         <div class="six columns">
