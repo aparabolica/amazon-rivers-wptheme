@@ -52,7 +52,23 @@
     <section class="article-content">
       <div class="container">
         <div class="eight columns offset-by-two">
+          <?php
+          $src = arp_get_source_url();
+          if($src) :
+            ?>
+            <p class="arp-src"><a href="<?php echo $src; ?>" rel="external" target="_blank"><?php _e('Go to the original post', 'arp'); ?></a></p>
+            <?php
+          endif;
+          ?>
           <?php the_content(); ?>
+          <?php
+          $src = arp_get_source_url();
+          if($src) :
+            ?>
+            <p class="arp-src"><a href="<?php echo $src; ?>" rel="external" target="_blank"><?php _e('Go to the original post', 'arp'); ?></a></p>
+            <?php
+          endif;
+          ?>
         </div>
       </div>
     </section>

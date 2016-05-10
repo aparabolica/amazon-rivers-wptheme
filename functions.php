@@ -107,3 +107,4 @@ require_once(TEMPLATEPATH . '/inc/page-builder-hooks.php');
 require_once(TEMPLATEPATH . '/inc/carousel.php');
 require_once(TEMPLATEPATH . '/inc/basins.php');
 require_once(TEMPLATEPATH . '/inc/video.php');
+require_once(TEMPLATEPATH . '/inc/external-src.php');
