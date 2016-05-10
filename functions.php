@@ -49,7 +49,7 @@ add_action('wp_footer', 'arp_custom_header');
 
 function arp_get_header_class() {
   $class = '';
-  if(!is_home() && !is_front_page()) {
+  if(!is_page_template('homepage.php')) {
     $class .= ' collapsed';
   }
   if(is_page_template('basins.php') || is_page_template('map.php') || is_post_type_archive('basin')) {
@@ -60,7 +60,7 @@ function arp_get_header_class() {
 
 function arp_get_brand_class() {
   $class = '';
-  if(!is_home() && !is_front_page()) {
+  if(!is_page_template('homepage.php')) {
     $class .= ' small';
   }
   return $class;
@@ -100,7 +100,7 @@ function arp_register_required_plugins() {
 add_action('tgmpa_register', 'arp_register_required_plugins');
 
 // ACF Settings
-define( 'ACF_LITE', true );
+// define( 'ACF_LITE', true );
 
 require_once(TEMPLATEPATH . '/inc/page-builder-hooks.php');
 
@@ -108,3 +108,5 @@ require_once(TEMPLATEPATH . '/inc/carousel.php');
 require_once(TEMPLATEPATH . '/inc/basins.php');
 require_once(TEMPLATEPATH . '/inc/video.php');
 require_once(TEMPLATEPATH . '/inc/external-src.php');
+require_once(TEMPLATEPATH . '/inc/library-page.php');
+require_once(TEMPLATEPATH . '/inc/home-page.php');

@@ -1,10 +1,10 @@
 <?php
 
 /*
- * ARP External src
+ * ARP Library Page
  */
 
-class ARP_External_Src {
+class ARP_Library_Page {
 
   function __construct() {
     add_action('init', array($this, 'register_field_group'));
@@ -18,24 +18,24 @@ class ARP_External_Src {
     return $field;
   }
 
-  function get_source_url($post_id = false) {
+  function get_story_map_url($post_id = false) {
     global $post;
     $post_id = $post_id ? $post_id : $post->ID;
-    return get_field('source_url', $post_id);
+    return get_field('story_map_url', $post_id);
   }
 
   function register_field_group() {
     if(function_exists("register_field_group")) {
       register_field_group(array (
-        'id' => 'acf_external_src',
-        'title' => __('External source URL', 'arp'),
+        'id' => 'acf_library_page_settings',
+        'title' => __('Library Page Settings', 'arp'),
         'fields' => array (
           array (
-            'key' => 'field_source_url',
-            'label' => __('External source URL', 'arp'),
-            'name' => 'source_url',
+            'key' => 'field_story_map_url',
+            'label' => __('Story Map URL', 'arp'),
+            'name' => 'story_map_url',
             'type' => $this->get_text_field(),
-            'instructions' => __('Enter the URL in which this content has been originally published.', 'arp'),
+            'instructions' => __('Enter the story map url for embed on the library page.', 'arp'),
             'required' => 0,
             'default_value' => '',
             'placeholder' => '',
@@ -48,9 +48,9 @@ class ARP_External_Src {
         'location' => array (
           array (
             array (
-              'param' => 'post_type',
+              'param' => 'page_template',
               'operator' => '==',
-              'value' => 'post',
+              'value' => 'library.php',
               'order_no' => 0,
               'group_no' => 0,
             ),
@@ -67,9 +67,9 @@ class ARP_External_Src {
   }
 }
 
-$arp_external_src = new ARP_External_Src();
+$arp_library_page = new ARP_Library_Page();
 
-function arp_get_source_url($post_id = false) {
-  global $arp_external_src;
-  return $arp_external_src->get_source_url($post_id);
+function arp_get_story_map_url($post_id = false) {
+  global $arp_library_page;
+  return $arp_library_page->get_story_map_url($post_id);
 }
