@@ -85,7 +85,7 @@
     <div class="map-info">
       <div class="container">
         <div class="twelve columns">
-          <h2><?php _e('Amazon Water Basins', 'arp'); ?></h2>
+          <h2><?php _e('Amazon River Basins', 'arp'); ?></h2>
         </div>
       </div>
     </div>
