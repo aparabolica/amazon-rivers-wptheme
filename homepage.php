@@ -17,6 +17,11 @@
         </div>
       </div>
     </div>
+    <?php
+    $header = get_custom_header();
+    $image = get_post($header->attachment_id);
+    ?>
+    <div class="bg-caption"><?php echo apply_filters('the_content', $image->post_excerpt); ?></div>
   </section>
   <div class="container">
     <div class="nine columns">
