@@ -50,7 +50,7 @@
   <div class="container">
     <div class="six columns">
       <?php
-      query_posts('posts_per_page=3&category_name=publication');
+      query_posts('posts_per_page=3&category_name=publications');
       if(have_posts()) :
         ?>
         <section id="publications" class="page-section">
@@ -94,7 +94,7 @@
     </div>
     <div class="four columns">
       <?php
-      query_posts('posts_per_page=1&category_name=video');
+      query_posts('posts_per_page=1&category_name=videos');
       if(have_posts()) :
         ?>
         <section id="videos" class="page-section">
