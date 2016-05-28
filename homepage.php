@@ -21,7 +21,7 @@
     $header = get_custom_header();
     $image = get_post($header->attachment_id);
     ?>
-    <div class="bg-caption"><?php echo apply_filters('the_content', $image->post_excerpt); ?></div>
+    <div class="bg-caption"><p class="caption"><?php _e('Caption and credit:'); ?></p><?php echo apply_filters('the_content', $image->post_excerpt); ?></div>
   </section>
   <div class="container">
     <div class="nine columns">
