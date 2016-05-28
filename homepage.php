@@ -62,8 +62,8 @@
       <section id="social">
         <div class="social-content">
           <h2><?php _e('Connect with us', 'arp'); ?></h2>
-          <a class="fa fa-facebook"></a>
-          <a class="fa fa-twitter"></a>
+          <a class="fa fa-facebook" href="https://www.facebook.com/WWFLivingAmazonInitiative/" target="_blank" rel="extenal" title="Facebook"></a>
+          <a class="fa fa-youtube" href="https://www.youtube.com/user/LivingAmazon" target="_blank" rel="external" title="YouTube"></a>
         </div>
       </section>
       <section id="latest" class="page-section clean">
