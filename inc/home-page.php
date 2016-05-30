@@ -30,6 +30,12 @@ class ARP_Home_Page {
     return get_field('headline_description', $post_id);
   }
 
+  function get_map($post_id = false) {
+    global $post;
+    $post_id = $post_id ? $post_id : $post->ID;
+    return do_shortcode(get_field('domegis_map', $post_id));
+  }
+
   function get_url($post_id = false) {
     global $post;
     $post_id = $post_id ? $post_id : $post->ID;
@@ -84,6 +90,20 @@ class ARP_Home_Page {
             'formatting' => 'html',
             'maxlength' => '',
           ),
+          array (
+            'key' => 'field_domegis_map',
+            'label' => __('DomeGIS Map', 'arp'),
+            'name' => 'domegis_map',
+            'type' => 'textarea',
+            'instructions' => __('Paste the shortcode for a DomeGIS Map.', 'arp'),
+            'required' => 0,
+            'default_value' => '',
+            'placeholder' => '',
+            'prepend' => '',
+            'append' => '',
+            'formatting' => 'html',
+            'maxlength' => '',
+          ),
         ),
         'location' => array (
           array (
@@ -120,4 +140,8 @@ function arp_get_headline_description($post_id = false) {
 function arp_get_headline_url($post_id = false) {
   global $arp_home_page;
   return $arp_home_page->get_url($post_id);
+}
+function arp_get_home_map($post_id = false) {
+  global $arp_home_page;
+  return $arp_home_page->get_map($post_id);
 }

@@ -69,7 +69,11 @@ if(have_posts()) :
         </div>
         <div class="six columns">
           <div class="map">
-            <?php get_template_part('parts/map'); ?>
+            <?php while(have_posts()) : the_post(); ?>
+              <div class="basin-map" data-postid="<?php the_ID(); ?>">
+                <?php echo do_shortcode('[domegis_map]'); ?>
+              </div>
+            <?php endwhile; ?>
           </div>
         </div>
       </div>

@@ -1,7 +1,11 @@
 <?php get_header(); ?>
 
 <section id="main-map">
-  <?php get_template_part('parts/map'); ?>
+  <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+    <div class="basin-map" data-postid="<?php echo $post->post_name; ?>">
+      <?php echo do_shortcode('[domegis_map]'); ?>
+    </div>
+  <?php endwhile; endif; ?>
 </section>
 
 <section id="basins-selector">

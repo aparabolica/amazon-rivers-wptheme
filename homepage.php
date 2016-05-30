@@ -86,15 +86,17 @@
       </section>
     </div>
   </div>
-  <section id="map">
-    <div class="map-info">
-      <div class="container">
-        <div class="twelve columns">
-          <h2><?php _e('Amazon River Basins', 'arp'); ?></h2>
-        </div>
+  <div id="home-map-info">
+    <div class="container">
+      <div class="twelve columns">
+        <h2><?php _e('Amazon River Basins', 'arp'); ?></h2>
       </div>
     </div>
-    <?php get_template_part('parts/map'); ?>
+  </div>
+  <section id="map">
+    <div class="arp-map">
+      <?php echo arp_get_home_map(); ?>
+    </div>
   </section>
 
   <?php get_template_part('parts/basins', 'section'); ?>

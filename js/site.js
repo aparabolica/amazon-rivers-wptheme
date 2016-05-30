@@ -73,6 +73,9 @@
     if($section.length) {
       $section.each(function() {
         var basins = $(this);
+
+        var maps = basins.find('.basin-map');
+
         basins.on('click', '.basin-header nav a', function(e) {
 
           e.preventDefault();
@@ -80,8 +83,24 @@
           var id = $(this).data('postid');
 
           basins.find('.basin-header nav a').removeClass('active').show();
-          basins.find('.excerpt, .posts').removeClass('active').hide();
-          basins.find('.excerpt[data-postid="' + id + '"], .posts[data-postid="' + id + '"]').addClass('active').show();
+
+          basins
+            .find('.excerpt, .posts, .basin-map')
+            .removeClass('active')
+            .hide();
+          basins
+            .find('.basin-map')
+            .detach();
+
+          basins
+            .find('.excerpt[data-postid="' + id + '"], .posts[data-postid="' + id + '"], .basin-map[data-postid="' + id + '"]')
+            .addClass('active')
+            .show();
+          maps
+            .filter('.basin-map[data-postid="' + id + '"]')
+            .appendTo(basins.find('.map'))
+            .addClass('active')
+            .show();
 
           $(this).hide().addClass('active');
 
@@ -104,12 +123,20 @@
     if(selector.length) {
       selector.each(function() {
         var sel = $(this);
+        var maps = $('.basin-map');
         sel.find('.basin-item h2').on('click', function() {
           sel.removeClass('selected');
           var name = $(this).text();
           var id = $(this).parents('.basin-item').attr('id');
           $('.related-stories .basin-posts').hide();
           $('.related-stories #basin-' + id + '-posts').show();
+
+          $('.basin-map')
+            .detach();
+          maps
+            .filter('.basin-map[data-postid="' + id + '"]')
+            .appendTo($('#main-map'));
+
           $('body').find('.basin-name').text(name);
           if(!$(this).parents('.basin-item').hasClass('active')) {
             sel.find('.basin-item').removeClass('active');
