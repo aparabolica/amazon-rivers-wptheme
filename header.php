@@ -13,10 +13,25 @@
         <div class="brand <?php echo arp_get_brand_class(); ?>">
           <img src="<?php echo get_template_directory_uri(); ?>/img/wwf.png" />
           <h1 class="title">
-            <a href="<?php echo home_url('/'); ?>">
-              <span class="subject">Amazon Rivers</span>
-              <span class="product">Platform</span>
-            </a>
+            <?php
+            $lang = qtranxf_getLanguage();
+            if($lang == 'pb' || $lang == 'pt_BR') :
+              ?>
+              <a href="<?php echo home_url('/'); ?>">
+                <span class="product">Portal</span>
+                <span class="subject">Rios da Amazônia</span>
+              </a>
+            <?php elseif($lang == 'es') : ?>
+              <a href="<?php echo home_url('/'); ?>">
+                <span class="product">Portal</span>
+                <span class="subject">Rios Amazónicos</span>
+              </a>
+            <?php else : ?>
+              <a href="<?php echo home_url('/'); ?>">
+                <span class="subject">Amazon Rivers</span>
+                <span class="product">Platform</span>
+              </a>
+            <?php endif; ?>
           </h1>
         </div>
         <nav>
