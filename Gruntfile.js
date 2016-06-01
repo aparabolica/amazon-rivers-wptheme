@@ -24,10 +24,33 @@ module.exports = function(grunt) {
         ]
       }
     },
+    pot: {
+      options: {
+        text_domain: 'arp',
+        language: 'PHP',
+        keywords: [
+          '__',
+          '_e',
+          '_x',
+          '_ex',
+          '_n',
+          '_nx'
+        ],
+        dest: 'languages/'
+      },
+      files: {
+        src: ['**/*.php', '!assets/**/*.php', '!node_modules/**/*.php', '!inc/class-tgm*'],
+        expand: true
+      }
+    },
     watch: {
       css: {
         files: 'css/*.less',
         tasks: ['less']
+      },
+      php: {
+        files: ['**/*.php', '!assets/**/*.php', '!node_modules/**/*.php', '!inc/class-tgm*'],
+        tasks: ['pot']
       },
       copy: {
         files: 'bower_components/**/*',
@@ -38,11 +61,12 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-pot');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask(
     'build',
-    ['less', 'copy']
+    ['less', 'copy', 'pot']
   );
 
   grunt.registerTask(

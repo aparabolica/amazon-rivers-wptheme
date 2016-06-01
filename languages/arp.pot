@@ -1,0 +1,293 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: amazon-rivers-wptheme 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-06-01 14:09-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: archive-basin.php:13
+msgid "Select a basin for details:"
+msgstr ""
+
+#: archive-basin.php:26
+msgid "Stories on"
+msgstr ""
+
+#: archive.php:9 index.php:9
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: archive.php:11 index.php:11
+#, php-format
+msgid "Search results for: %s"
+msgstr ""
+
+#: archive.php:13 index.php:13
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: archive.php:15 index.php:15
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: archive.php:15 index.php:15
+msgid "F Y"
+msgstr ""
+
+#: archive.php:17 index.php:17
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: archive.php:17 index.php:17
+msgid "Y"
+msgstr ""
+
+#: archive.php:19 index.php:19
+msgid "Archives"
+msgstr ""
+
+#: functions.php:14
+msgid "Header navigation"
+msgstr ""
+
+#: functions.php:15
+msgid "Footer navigation"
+msgstr ""
+
+#: header.php:26
+msgid "Search anything..."
+msgstr ""
+
+#: homepage.php:16 parts/basins-section.php:9
+msgid "Learn more"
+msgstr ""
+
+#: homepage.php:64
+msgid "Connect with us"
+msgstr ""
+
+#: homepage.php:70 library.php:25
+msgid "Latest news"
+msgstr ""
+
+#: homepage.php:92
+msgid "Amazon River Basins"
+msgstr ""
+
+#: inc/basins.php:18 inc/basins.php:20
+msgid "Basins"
+msgstr ""
+
+#: inc/basins.php:19 inc/basins.php:21
+msgid "Basin"
+msgstr ""
+
+#: inc/basins.php:22 inc/carousel.php:21
+msgid "Add new"
+msgstr ""
+
+#: inc/basins.php:23
+msgid "Add new basin"
+msgstr ""
+
+#: inc/basins.php:24
+msgid "New basin"
+msgstr ""
+
+#: inc/basins.php:25
+msgid "Edit basin"
+msgstr ""
+
+#: inc/basins.php:26
+msgid "View basin"
+msgstr ""
+
+#: inc/basins.php:27
+msgid "All basins"
+msgstr ""
+
+#: inc/basins.php:28
+msgid "Search basins"
+msgstr ""
+
+#: inc/basins.php:29
+msgid "Parent basins:"
+msgstr ""
+
+#: inc/basins.php:30
+msgid "No basins found."
+msgstr ""
+
+#: inc/basins.php:31
+msgid "No basins found in Trash."
+msgstr ""
+
+#: inc/basins.php:36
+msgid "ARP Basins"
+msgstr ""
+
+#: inc/carousel.php:17 inc/carousel.php:19
+msgid "Carousel"
+msgstr ""
+
+#: inc/carousel.php:18 inc/carousel.php:20
+msgid "Carousel item"
+msgstr ""
+
+#: inc/carousel.php:22
+msgid "Add new carousel item"
+msgstr ""
+
+#: inc/carousel.php:23
+msgid "New carousel item"
+msgstr ""
+
+#: inc/carousel.php:24
+msgid "Edit carousel item"
+msgstr ""
+
+#: inc/carousel.php:25
+msgid "View carousel item"
+msgstr ""
+
+#: inc/carousel.php:26
+msgid "All carousel items"
+msgstr ""
+
+#: inc/carousel.php:27
+msgid "Search carousel items"
+msgstr ""
+
+#: inc/carousel.php:28
+msgid "Parent carousel items:"
+msgstr ""
+
+#: inc/carousel.php:29
+msgid "No carousel items found."
+msgstr ""
+
+#: inc/carousel.php:30
+msgid "No carousel items found in Trash."
+msgstr ""
+
+#: inc/carousel.php:35
+msgid "ARP Carousel"
+msgstr ""
+
+#: inc/carousel.php:62
+msgid "Carousel item meta"
+msgstr ""
+
+#: inc/carousel.php:69
+msgid "Enter the destination url for this carousel item"
+msgstr ""
+
+#: inc/carousel.php:80
+msgid "Open in new window"
+msgstr ""
+
+#: inc/external-src.php:31 inc/external-src.php:35
+msgid "External source URL"
+msgstr ""
+
+#: inc/external-src.php:38
+msgid "Enter the URL in which this content has been originally published."
+msgstr ""
+
+#: inc/home-page.php:49 inc/library-page.php:31
+msgid "Library Page Settings"
+msgstr ""
+
+#: inc/home-page.php:53
+msgid "Headline"
+msgstr ""
+
+#: inc/home-page.php:56
+msgid ""
+"Enter the introduction title to your project (displayed on the home page "
+"header)."
+msgstr ""
+
+#: inc/home-page.php:67
+msgid "Description"
+msgstr ""
+
+#: inc/home-page.php:70
+msgid ""
+"Enter the headline description to your project (displayed on the home page "
+"header)."
+msgstr ""
+
+#: inc/home-page.php:81
+msgid "\"Learn more\" URL"
+msgstr ""
+
+#: inc/home-page.php:84
+msgid "Enter the url for the button displayed on the home page header."
+msgstr ""
+
+#: inc/home-page.php:95
+msgid "DomeGIS Map"
+msgstr ""
+
+#: inc/home-page.php:98
+msgid "Paste the shortcode for a DomeGIS Map."
+msgstr ""
+
+#: inc/library-page.php:35
+msgid "Story Map URL"
+msgstr ""
+
+#: inc/library-page.php:38
+msgid "Enter the story map url for embed on the library page."
+msgstr ""
+
+#: inc/video.php:35 inc/video.php:39
+msgid "Video URL"
+msgstr ""
+
+#: inc/video.php:42
+msgid "Enter the video url for this post. It can YouTube or Vimeo videos."
+msgstr ""
+
+#: library.php:57
+msgid "Publications"
+msgstr ""
+
+#: library.php:91
+msgid ""
+"Help stop the degradation of our planet's natural environment, and build a "
+"future in which people live in harmony with nature."
+msgstr ""
+
+#: library.php:101
+msgid "Videos"
+msgstr ""
+
+#: parts/basins-section.php:20
+msgid "Select another basin:"
+msgstr ""
+
+#: parts/basins-section.php:67
+msgid "Learn more about"
+msgstr ""
+
+#: single.php:59 single.php:68
+msgid "Go to the original post"
+msgstr ""
