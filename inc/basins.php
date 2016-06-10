@@ -19,7 +19,7 @@ class ARP_Basins {
       'singular_name'      => _x( 'Basin', 'post type singular name', 'arp' ),
       'menu_name'          => _x( 'Basins', 'admin menu', 'arp' ),
       'name_admin_bar'     => _x( 'Basin', 'add new on admin bar', 'arp' ),
-      'add_new'            => _x( 'Add new', 'book', 'arp' ),
+      'add_new'            => _x( 'Add new', 'basin', 'arp' ),
       'add_new_item'       => __( 'Add new basin', 'arp' ),
       'new_item'           => __( 'New basin', 'arp' ),
       'edit_item'          => __( 'Edit basin', 'arp' ),

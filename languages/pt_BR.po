@@ -1,49 +1,54 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
+# Translators:
+# Miguel Peixe <miguspeixe@gmail.com>, 2016
+# Stefano Biagioni Wrobleski <stefano@infoamazonia.org>, 2016
+# Vitor George <vitor.george@gmail.com>, 2016
 msgid ""
 msgstr ""
-"Project-Id-Version: amazon-rivers-wptheme 0.0.1\n"
+"Project-Id-Version: Amazon Rivers Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-10 16:49-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2016-06-10 16:54-0300\n"
+"Last-Translator: Miguel Peixe <miguel@cardume.art.br>\n"
+"Language-Team: Portuguese (Brazil) (http://www.transifex.com/ecologia-"
+"digital/amazon-rivers-project/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: pt_BR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 1.5.4\n"
 
 #: archive-basin.php:13
 msgid "Select a basin for details:"
-msgstr ""
+msgstr "Selecione uma bacia para ver detalhes:"
 
 #: archive-basin.php:26
 msgid "Stories on"
-msgstr ""
+msgstr "Artigos sobre"
 
 #: archive.php:9 index.php:9
 #, php-format
 msgid "%s"
-msgstr ""
+msgstr "%s"
 
 #: archive.php:11 index.php:11
 #, php-format
 msgid "Search results for: %s"
-msgstr ""
+msgstr "Resultados da busca por: %s"
 
 #: archive.php:13 index.php:13
 #, php-format
 msgid "Daily Archives: %s"
-msgstr ""
+msgstr "Arquivos diários: %s"
 
 #: archive.php:15 index.php:15
 #, php-format
 msgid "Monthly Archives: %s"
-msgstr ""
+msgstr "Arquivos mensais: %s"
 
 #: archive.php:15 index.php:15
 msgctxt "monthly archives date format"
@@ -53,7 +58,7 @@ msgstr ""
 #: archive.php:17 index.php:17
 #, php-format
 msgid "Yearly Archives: %s"
-msgstr ""
+msgstr "Arquivos anuais: %s"
 
 #: archive.php:17 index.php:17
 msgctxt "yearly archives date format"
@@ -62,264 +67,272 @@ msgstr ""
 
 #: archive.php:19 index.php:19
 msgid "Archives"
-msgstr ""
+msgstr "Arquivos"
 
 #: functions.php:16
 msgid "Header navigation"
-msgstr ""
+msgstr "Cabeçalho de navegação"
 
 #: functions.php:17
 msgid "Footer navigation"
-msgstr ""
+msgstr "Rodapé de navegação"
 
 #: header.php:41
 msgid "Search anything..."
-msgstr ""
+msgstr "Busque qualquer coisa..."
 
 #: homepage.php:16 parts/basins-section.php:9
 msgid "Learn more"
-msgstr ""
+msgstr "Saiba mais"
 
 #: homepage.php:64
 msgid "Connect with us"
-msgstr ""
+msgstr "Conecte-se conosco"
 
 #: homepage.php:70 library.php:25
 msgid "Latest news"
-msgstr ""
+msgstr "Últimas notícias"
 
 #: homepage.php:92
 msgid "Amazon River Basins"
-msgstr ""
+msgstr "Bacias de rios da Amazônia"
 
 #: inc/basins.php:18
 msgctxt "post type general name"
 msgid "Basins"
-msgstr ""
+msgstr "Bacias"
 
 #: inc/basins.php:19
 msgctxt "post type singular name"
 msgid "Basin"
-msgstr ""
+msgstr "Bacia"
 
 #: inc/basins.php:20
 msgctxt "admin menu"
 msgid "Basins"
-msgstr ""
+msgstr "Bacias"
 
 #: inc/basins.php:21
 msgctxt "add new on admin bar"
 msgid "Basin"
-msgstr ""
+msgstr "Bacia"
 
 #: inc/basins.php:22
 msgctxt "basin"
 msgid "Add new"
-msgstr ""
+msgstr "Adicionar nova"
 
 #: inc/basins.php:23
 msgid "Add new basin"
-msgstr ""
+msgstr "Adicionar nova bacia"
 
 #: inc/basins.php:24
 msgid "New basin"
-msgstr ""
+msgstr "Nova bacia"
 
 #: inc/basins.php:25
 msgid "Edit basin"
-msgstr ""
+msgstr "Editar bacia"
 
 #: inc/basins.php:26
 msgid "View basin"
-msgstr ""
+msgstr "Visualizar bacia"
 
 #: inc/basins.php:27
 msgid "All basins"
-msgstr ""
+msgstr "Todas as bacias"
 
 #: inc/basins.php:28
 msgid "Search basins"
-msgstr ""
+msgstr "Buscar bacias"
 
 #: inc/basins.php:29
 msgid "Parent basins:"
-msgstr ""
+msgstr "Bacias matrizes:"
 
 #: inc/basins.php:30
 msgid "No basins found."
-msgstr ""
+msgstr "Nenhuma bacia encontrada."
 
 #: inc/basins.php:31
 msgid "No basins found in Trash."
-msgstr ""
+msgstr "Nenhuma bacia encontrada na Lixeira."
 
 #: inc/basins.php:36
 msgid "ARP Basins"
-msgstr ""
+msgstr "Bacias ARP"
 
 #: inc/carousel.php:17
 msgctxt "post type general name"
 msgid "Carousel"
-msgstr ""
+msgstr "Carrossel"
 
 #: inc/carousel.php:18
 msgctxt "post type singular name"
 msgid "Carousel item"
-msgstr ""
+msgstr "Item do carrossel"
 
 #: inc/carousel.php:19
 msgctxt "admin menu"
 msgid "Carousel"
-msgstr ""
+msgstr "Carrossel"
 
 #: inc/carousel.php:20
 msgctxt "add new on admin bar"
 msgid "Carousel item"
-msgstr ""
+msgstr "Item do carrossel"
 
 #: inc/carousel.php:21
 msgctxt "carousel"
 msgid "Add new"
-msgstr ""
+msgstr "Adicionar novo"
 
 #: inc/carousel.php:22
 msgid "Add new carousel item"
-msgstr ""
+msgstr "Adicionar novo item ao carrossel"
 
 #: inc/carousel.php:23
 msgid "New carousel item"
-msgstr ""
+msgstr "Novo item do carrossel"
 
 #: inc/carousel.php:24
 msgid "Edit carousel item"
-msgstr ""
+msgstr "Editar item do carrossel"
 
 #: inc/carousel.php:25
 msgid "View carousel item"
-msgstr ""
+msgstr "Visualizar item do carrossel"
 
 #: inc/carousel.php:26
 msgid "All carousel items"
-msgstr ""
+msgstr "Todos os itens do carrossel"
 
 #: inc/carousel.php:27
 msgid "Search carousel items"
-msgstr ""
+msgstr "Buscar itens do carrossel"
 
 #: inc/carousel.php:28
 msgid "Parent carousel items:"
-msgstr ""
+msgstr "Itens-pai do carrossel:"
 
 #: inc/carousel.php:29
 msgid "No carousel items found."
-msgstr ""
+msgstr "Nenhum item de carrossel encontrado."
 
 #: inc/carousel.php:30
 msgid "No carousel items found in Trash."
-msgstr ""
+msgstr "Nenhum item de carrossel encontrado na Lixeira."
 
 #: inc/carousel.php:35
 msgid "ARP Carousel"
-msgstr ""
+msgstr "Carrossel ARP"
 
 #: inc/carousel.php:62
 msgid "Carousel item meta"
-msgstr ""
+msgstr "Metadados do item do carrossel"
 
 #: inc/carousel.php:69
 msgid "Enter the destination url for this carousel item"
-msgstr ""
+msgstr "Edite a URL de destino para este item do carrossel"
 
 #: inc/carousel.php:80
 msgid "Open in new window"
-msgstr ""
+msgstr "Abrir em uma nova janela"
 
 #: inc/external-src.php:31 inc/external-src.php:35
 msgid "External source URL"
-msgstr ""
+msgstr "URL de fonte externa"
 
 #: inc/external-src.php:38
 msgid "Enter the URL in which this content has been originally published."
-msgstr ""
+msgstr "Digite a URL na qual este conteúdo foi originalmente publicado."
 
 #: inc/home-page.php:49 inc/library-page.php:31
 msgid "Library Page Settings"
-msgstr ""
+msgstr "Configurações da página de Acervo"
 
 #: inc/home-page.php:53
 msgid "Headline"
-msgstr ""
+msgstr "Chamada"
 
 #: inc/home-page.php:56
 msgid ""
 "Enter the introduction title to your project (displayed on the home page "
 "header)."
 msgstr ""
+"Digite o título de introdução ao seu projeto (exibido no cabeçalho da página "
+"inicial)."
 
 #: inc/home-page.php:67
 msgid "Description"
-msgstr ""
+msgstr "Descrição"
 
 #: inc/home-page.php:70
 msgid ""
 "Enter the headline description to your project (displayed on the home page "
 "header)."
 msgstr ""
+"Digite a descrição da chamada do seu projeto (exibido no cabeçalho da página "
+"inicial)."
 
 #: inc/home-page.php:81
 msgid "\"Learn more\" URL"
-msgstr ""
+msgstr "URL \"Saiba mais\""
 
 #: inc/home-page.php:84
 msgid "Enter the url for the button displayed on the home page header."
-msgstr ""
+msgstr "Digite a URL para o botão exibido no cabeçalho da página inicial."
 
 #: inc/home-page.php:95
 msgid "DomeGIS Map"
-msgstr ""
+msgstr "Mapa DomeGIS"
 
 #: inc/home-page.php:98
 msgid "Paste the shortcode for a DomeGIS Map."
-msgstr ""
+msgstr "Cole o shortcode de um mapa DomeGIS."
 
 #: inc/library-page.php:35
 msgid "Story Map URL"
-msgstr ""
+msgstr "URL do Story Map"
 
 #: inc/library-page.php:38
 msgid "Enter the story map url for embed on the library page."
-msgstr ""
+msgstr "Digite a URL do Story Map para incorporar na página de Acervo."
 
 #: inc/video.php:35 inc/video.php:39
 msgid "Video URL"
-msgstr ""
+msgstr "URL de vídeo"
 
 #: inc/video.php:42
 msgid "Enter the video url for this post. It can be from YouTube or Vimeo."
 msgstr ""
+"Digite a URL de vídeo para esta postagem. Pode ser um vídeo do YouTube ou "
+"Vimeo."
 
 #: library.php:57
 msgid "Publications"
-msgstr ""
+msgstr "Publicações"
 
 #: library.php:91
 msgid ""
 "Help stop the degradation of our planet's natural environment, and build a "
 "future in which people live in harmony with nature."
 msgstr ""
+"Ajude a deter a degradação ambiental no nosso planeta e construa um futuro "
+"no qual as pessoas vivam em harmonia com a natureza "
 
 #: library.php:101
 msgid "Videos"
-msgstr ""
+msgstr "Vídeos"
 
 #: parts/basins-section.php:20
 msgid "Select another basin:"
-msgstr ""
+msgstr "Selecione outra bacia:"
 
 #: parts/basins-section.php:67
 msgid "Learn more about"
-msgstr ""
+msgstr "Saiba mais a respeito"
 
 #: single.php:59 single.php:68
 msgid "Go to the original post"
-msgstr ""
+msgstr "Ir para a postagem original"

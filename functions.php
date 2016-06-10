@@ -4,6 +4,8 @@ add_filter('show_admin_bar', '__return_false');
 
 function arp_setup_theme() {
 
+  load_theme_textdomain('arp', get_template_directory() . '/languages');
+
   add_theme_support( 'custom-header' );
   add_theme_support( 'post-thumbnails' );
 

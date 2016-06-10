@@ -31,10 +31,10 @@ module.exports = function(grunt) {
         keywords: [
           '__',
           '_e',
-          '_x',
-          '_ex',
-          '_n',
-          '_nx'
+          '_x:1,2c',
+          '_ex:1,2c',
+          '_n:1,2',
+          '_nx:1,2,4c'
         ],
         dest: 'languages/'
       },

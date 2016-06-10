@@ -18,7 +18,7 @@ class ARP_Carousel {
       'singular_name'      => _x( 'Carousel item', 'post type singular name', 'arp' ),
       'menu_name'          => _x( 'Carousel', 'admin menu', 'arp' ),
       'name_admin_bar'     => _x( 'Carousel item', 'add new on admin bar', 'arp' ),
-      'add_new'            => _x( 'Add new', 'book', 'arp' ),
+      'add_new'            => _x( 'Add new', 'carousel', 'arp' ),
       'add_new_item'       => __( 'Add new carousel item', 'arp' ),
       'new_item'           => __( 'New carousel item', 'arp' ),
       'edit_item'          => __( 'Edit carousel item', 'arp' ),
