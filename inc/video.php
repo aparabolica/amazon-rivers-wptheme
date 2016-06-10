@@ -39,7 +39,7 @@ class ARP_Video {
             'label' => __('Video URL', 'arp'),
             'name' => 'video_url',
             'type' => $this->get_text_field(),
-            'instructions' => __('Enter the video url for this post. It can YouTube or Vimeo videos.', 'arp'),
+            'instructions' => __('Enter the video url for this post. It can be from YouTube or Vimeo.', 'arp'),
             'required' => 0,
             'default_value' => '',
             'placeholder' => '',

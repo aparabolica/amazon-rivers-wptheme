@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amazon-rivers-wptheme 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-01 14:19-0300\n"
+"POT-Creation-Date: 2016-06-10 16:11-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -263,7 +263,7 @@ msgid "Video URL"
 msgstr ""
 
 #: inc/video.php:42
-msgid "Enter the video url for this post. It can YouTube or Vimeo videos."
+msgid "Enter the video url for this post. It can be from YouTube or Vimeo."
 msgstr ""
 
 #: library.php:57
