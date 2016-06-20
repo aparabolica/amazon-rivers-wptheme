@@ -14,7 +14,7 @@
         </div>
         <div class="three columns">
           <aside class="article-share">
-            <h3>Share this story</h3>
+            <h3><?php _e('Share this story', 'arp'); ?></h3>
             <ul>
               <li>
                 <div class="fb-like" data-href="<?php the_permalink(); ?>" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>

@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Amazon Rivers Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-10 16:49-0300\n"
-"PO-Revision-Date: 2016-06-10 16:54-0300\n"
+"POT-Creation-Date: 2016-06-20 13:47-0300\n"
+"PO-Revision-Date: 2016-06-20 13:53-0300\n"
 "Last-Translator: Miguel Peixe <miguel@cardume.art.br>\n"
 "Language-Team: Spanish (http://www.transifex.com/ecologia-digital/amazon-"
 "rivers-project/language/es/)\n"
@@ -314,6 +314,10 @@ msgstr ""
 msgid "Publications"
 msgstr "Publicaciones"
 
+#: library.php:82
+msgid "Stay tuned"
+msgstr "Seguir"
+
 #: library.php:91
 msgid ""
 "Help stop the degradation of our planet's natural environment, and build a "
@@ -321,6 +325,10 @@ msgid ""
 msgstr ""
 "Ayuda a detener la degradación del medio ambiente de nuestro planeta y a "
 "construir un futuro en el que la gente viva en armonía con la naturaleza."
+
+#: library.php:92
+msgid "Take action"
+msgstr "Tomar acción"
 
 #: library.php:101
 msgid "Videos"
@@ -333,6 +341,10 @@ msgstr "Seleccione otra cuenca:"
 #: parts/basins-section.php:67
 msgid "Learn more about"
 msgstr "Aprenda más acerca de"
+
+#: single.php:17
+msgid "Share this story"
+msgstr "Compartir esta historia"
 
 #: single.php:59 single.php:68
 msgid "Go to the original post"

@@ -79,7 +79,7 @@
     </div>
     <div class="two columns">
       <section id="share" class="page-section">
-        <h2 class="section-title">Stay tuned</h2>
+        <h2 class="section-title"><?php _e('Stay tuned', 'arp'); ?></h2>
         <div class="section-box">
           <a class="fa fa-facebook" href="https://www.facebook.com/WWFLivingAmazonInitiative/" target="_blank" rel="extenal" title="Facebook"></a>
           <a class="fa fa-youtube" href="https://www.youtube.com/user/LivingAmazon" target="_blank" rel="external" title="YouTube"></a>
@@ -89,7 +89,7 @@
         <h2 class="section-title">WWF</h2>
         <div class="section-box">
           <p><?php _e('Help stop the degradation of our planet\'s natural environment, and build a future in which people live in harmony with nature.', 'arp'); ?></p>
-          <a class="button" href="#">Take action</a>
+          <a class="button" href="#"><?php _e('Take action', 'arp'); ?></a>
         </div>
     </div>
     <div class="four columns">
