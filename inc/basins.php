@@ -12,6 +12,14 @@ class ARP_Basins {
     add_filter('the_permalink', array($this, 'the_permalink'));
   }
 
+  function get_wysiwyg_field() {
+    $field = 'wysiwyg';
+    if(function_exists('qtranxf_generateLanguageSelectCode')) {
+      $field = 'qtranslate_wysiwyg';
+    }
+    return $field;
+  }
+
   function register_post_type() {
 
     $labels = array(
@@ -86,6 +94,44 @@ class ARP_Basins {
               'param' => 'post_type',
               'operator' => '==',
               'value' => 'post',
+              'order_no' => 0,
+              'group_no' => 0,
+            ),
+          ),
+        ),
+        'options' => array (
+          'position' => 'normal',
+          'layout' => 'no_box',
+          'hide_on_screen' => array (),
+        ),
+        'menu_order' => 0,
+      ));
+
+      register_field_group(array (
+        'id' => 'acf_basin-meta',
+        'title' => 'Basin Meta',
+        'fields' => array (
+          array (
+            'key' => 'field_data_description',
+            'label' => __('Data description', 'arp'),
+            'name' => 'data_description',
+            'type' => $this->get_wysiwyg_field(),
+            'instructions' => __('Describe this basin data aggregates and other useful information.', 'arp'),
+            'required' => 0,
+            'default_value' => '',
+            'placeholder' => '',
+            'prepend' => '',
+            'append' => '',
+            'formatting' => 'html',
+            'maxlength' => '',
+          )
+        ),
+        'location' => array (
+          array (
+            array (
+              'param' => 'post_type',
+              'operator' => '==',
+              'value' => 'basin',
               'order_no' => 0,
               'group_no' => 0,
             ),
