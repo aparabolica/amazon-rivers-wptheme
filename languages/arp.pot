@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amazon-rivers-wptheme 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-20 13:47-0300\n"
+"POT-Creation-Date: 2016-06-22 00:23-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -92,69 +92,77 @@ msgstr ""
 msgid "Amazon River Basins"
 msgstr ""
 
-#: inc/basins.php:18
+#: inc/basins.php:26
 msgctxt "post type general name"
 msgid "Basins"
 msgstr ""
 
-#: inc/basins.php:19
+#: inc/basins.php:27
 msgctxt "post type singular name"
 msgid "Basin"
 msgstr ""
 
-#: inc/basins.php:20
+#: inc/basins.php:28
 msgctxt "admin menu"
 msgid "Basins"
 msgstr ""
 
-#: inc/basins.php:21
+#: inc/basins.php:29
 msgctxt "add new on admin bar"
 msgid "Basin"
 msgstr ""
 
-#: inc/basins.php:22
+#: inc/basins.php:30
 msgctxt "basin"
 msgid "Add new"
 msgstr ""
 
-#: inc/basins.php:23
+#: inc/basins.php:31
 msgid "Add new basin"
 msgstr ""
 
-#: inc/basins.php:24
+#: inc/basins.php:32
 msgid "New basin"
 msgstr ""
 
-#: inc/basins.php:25
+#: inc/basins.php:33
 msgid "Edit basin"
 msgstr ""
 
-#: inc/basins.php:26
+#: inc/basins.php:34
 msgid "View basin"
 msgstr ""
 
-#: inc/basins.php:27
+#: inc/basins.php:35
 msgid "All basins"
 msgstr ""
 
-#: inc/basins.php:28
+#: inc/basins.php:36
 msgid "Search basins"
 msgstr ""
 
-#: inc/basins.php:29
+#: inc/basins.php:37
 msgid "Parent basins:"
 msgstr ""
 
-#: inc/basins.php:30
+#: inc/basins.php:38
 msgid "No basins found."
 msgstr ""
 
-#: inc/basins.php:31
+#: inc/basins.php:39
 msgid "No basins found in Trash."
 msgstr ""
 
-#: inc/basins.php:36
+#: inc/basins.php:44
 msgid "ARP Basins"
+msgstr ""
+
+#: inc/basins.php:116
+msgid "Data description"
+msgstr ""
+
+#: inc/basins.php:119
+msgid "Describe this basin data aggregates and other useful information."
 msgstr ""
 
 #: inc/carousel.php:17
