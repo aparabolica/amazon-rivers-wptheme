@@ -111,20 +111,20 @@ class ARP_Basins {
         'id' => 'acf_basin-meta',
         'title' => 'Basin Meta',
         'fields' => array (
-          array (
-            'key' => 'field_data_description',
-            'label' => __('Data description', 'arp'),
-            'name' => 'data_description',
-            'type' => $this->get_wysiwyg_field(),
-            'instructions' => __('Describe this basin data aggregates and other useful information.', 'arp'),
-            'required' => 0,
-            'default_value' => '',
-            'placeholder' => '',
-            'prepend' => '',
-            'append' => '',
-            'formatting' => 'html',
-            'maxlength' => '',
-          )
+          // array (
+          //   'key' => 'field_data_description',
+          //   'label' => __('Data description', 'arp'),
+          //   'name' => 'data_description',
+          //   'type' => $this->get_wysiwyg_field(),
+          //   'instructions' => __('Describe this basin data aggregates and other useful information.', 'arp'),
+          //   'required' => 0,
+          //   'default_value' => '',
+          //   'placeholder' => '',
+          //   'prepend' => '',
+          //   'append' => '',
+          //   'formatting' => 'html',
+          //   'maxlength' => '',
+          // )
         ),
         'location' => array (
           array (
