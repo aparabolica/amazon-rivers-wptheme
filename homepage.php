@@ -60,6 +60,7 @@
     </div>
     <div class="three columns">
       <section id="social">
+        <div class="social-bg"></div>
         <div class="social-content">
           <h2><?php _e('Connect with us', 'arp'); ?></h2>
           <a class="fa fa-facebook" href="https://www.facebook.com/WWFLivingAmazonInitiative/" target="_blank" rel="extenal" title="Facebook"></a>

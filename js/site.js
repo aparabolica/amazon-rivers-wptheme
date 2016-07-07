@@ -65,6 +65,24 @@
     }
   });
 
+  // Social bg
+  $(document).ready(function() {
+    var $social = $('#social');
+    if($social.length) {
+      $social.each(function() {
+        var social = $(this);
+        $(window).resize(function() {
+          var winWidth = $(window).width();
+          var offset = social.offset();
+          social.find('.social-bg').css({
+            left: -offset.left,
+            right: -(winWidth - offset.left - social.width())
+          });
+        }).resize();
+      });
+    }
+  });
+
   // Basin home section
   $(document).ready(function() {
 

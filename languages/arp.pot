@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amazon-rivers-wptheme 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-22 00:23-0300\n"
+"POT-Creation-Date: 2016-07-07 15:40-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -80,15 +80,15 @@ msgstr ""
 msgid "Learn more"
 msgstr ""
 
-#: homepage.php:64
+#: homepage.php:65
 msgid "Connect with us"
 msgstr ""
 
-#: homepage.php:70 library.php:25
+#: homepage.php:71 library.php:25
 msgid "Latest news"
 msgstr ""
 
-#: homepage.php:92
+#: homepage.php:93
 msgid "Amazon River Basins"
 msgstr ""
 
@@ -155,14 +155,6 @@ msgstr ""
 
 #: inc/basins.php:44
 msgid "ARP Basins"
-msgstr ""
-
-#: inc/basins.php:116
-msgid "Data description"
-msgstr ""
-
-#: inc/basins.php:119
-msgid "Describe this basin data aggregates and other useful information."
 msgstr ""
 
 #: inc/carousel.php:17
