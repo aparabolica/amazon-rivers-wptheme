@@ -148,7 +148,6 @@
           var id = $(this).parents('.basin-item').attr('id');
           $('.related-stories .basin-posts').hide();
           $('.related-stories #basin-' + id + '-posts').show();
-
           $('.basin-map')
             .detach();
           maps
@@ -163,10 +162,20 @@
           } else {
             sel.find('.basin-item').removeClass('active');
           }
+          updateHeight();
         });
         if(basin) {
           sel.find('#' + basin + ' h2').click();
         }
+      });
+    }
+    $(window).resize(updateHeight);
+    function updateHeight() {
+      $('.basin-item .basin-description').css({
+        height: 0
+      });
+      $('.basin-item.active .basin-description').css({
+        height: $(window).height() - 395
       });
     }
   });
