@@ -6,50 +6,136 @@
 
 class ARP_DomeGIS_Data {
 
+  var $count = 0;
+  var $data = array();
+
+  function __construct() {
+    add_action('init', array($this, 'register_data'));
+  }
+
   function register_data() {
-    $api = apply_filters('domegis_api_data', array());
 
-    foreach($api as $data) {
+    $this->data = apply_filters('domegis_api_data', array());
 
+    foreach($this->data as $data) {
+      $this->register_data_fields($data);
+      $this->count++;
     }
 
   }
 
+  function register_data_fields($data) {
+    if(function_exists("register_field_group") && isset($data['required_fields'])) {
+      $config = array(
+        'id' => 'acf_domegis_data_field_group_' . $data['name'],
+        'title' => $data['title'],
+        'fields' => array(),
+        'location' => array(
+          array(
+            array(
+              'param' => 'post_type',
+              'operator' => '==',
+              'value' => $data['post_type'],
+              'order_no' => 0,
+              'group_no' => 0,
+            ),
+          ),
+        ),
+        'options' => array (
+          'position' => 'normal',
+          'layout' => 'box',
+          'hide_on_screen' => array(),
+        ),
+        'menu_order' => 0
+      );
+      foreach($data['required_fields'] as $field) {
+        $config['fields'][] = array(
+          'key' => 'field_domegis_data_' . $field['key'],
+          'label' => $field['name'],
+          'name' => $field['key'],
+          'type' => 'text',
+          'required' => 0,
+          'default_value' => '',
+          'placeholder' => '',
+          'prepend' => '',
+          'append' => '',
+          'formatting' => 'html',
+          'maxlength' => ''
+        );
+      }
+      register_field_group($config);
+    }
+  }
+
+  function get_data($name, $post_id = false) {
+    global $post;
+    $post_id = $post_id ? $post_id : $post->ID;
+    $domegis_options = get_domegis_options();
+
+    foreach($this->data as $d) {
+      if($d['name'] == $name) {
+        $data = $d;
+      }
+    }
+
+    if($post_id && $data) {
+      $sql = $this->prepare_sql($post_id, $data);
+
+      if($sql) {
+        if(false === ($result = get_transient('domegis_data_' . md5($sql)))) {
+          $url = $domegis_options['url'] . '/layers/preview?sql=' . urlencode($sql);
+          $result = json_decode(file_get_contents($url), true)[0];
+          set_transient('domegis_data_' . md5($sql), $result, HOUR_IN_SECONDS);
+        }
+
+        if(count($result) == 1) {
+          return $result[0];
+        } else {
+          return $result;
+        }
+      } else {
+        return null;
+      }
+    } else {
+      return null;
+    }
+  }
+
+  function get_fields() {
+    return $this->data;
+  }
+
+  function prepare_sql($post_id, $data) {
+    $sql = $data['sql'];
+    if(isset($data['required_fields'])) {
+      $fields_data = array();
+      foreach($data['required_fields'] as $field) {
+        $fields_data[$field['key']] = get_field($field['key'], $post_id);
+      }
+      foreach($fields_data as $key => $val) {
+        if($val) {
+          $sql = str_replace('%' . $key . '%', '"' . $val . '"', $sql);
+        } else {
+          return '';
+        }
+      }
+    }
+    $sql = str_replace('\n', '', $sql);
+    return $sql;
+  }
+
 }
 
-function register_domegis_data($data) {
-  $data[] = array(
-    'title' => __('Percentage of deforested area inside basin', 'arp'),
-    'type' => 'percentage',
-    'required_fields' => array(
-      array(
-        'key' => 'deforestation_layer',
-        'name' => __('Deforestation layer ID', 'arp')
-      ),
-      array(
-        'key' => 'basin_layer',
-        'name' => __('Basin layer ID', 'arp')
-      )
-    ),
-    'sql' => 'SELECT layer1.geometry,
-      ROUND(
-        CAST(100.00 * (
-          ST_Area(
-            ST_Intersection(
-              ST_Multi(ST_Union(layer0.geometry)), ST_Multi(ST_Union(layer1.geometry))
-            )::geography
-          ) /
-          ST_Area(
-            ST_Multi(ST_Union(layer1.geometry))::geography
-          )
-        ) as numeric), 2) as percentage
-      FROM %deforestation_layer% as layer0,
-        %basin_layer% as layer1
-      WHERE ST_Intersects(layer0.geometry, layer1.geometry)
-      GROUP BY layer1.domegis_id;'
-  );
-  return $data;
+$arp_domegis_data = new ARP_DomeGIS_Data();
+
+function arp_get_domegis_data($name, $post_id = false) {
+  global $arp_domegis_data;
+  return $arp_domegis_data->get_data($name, $post_id);
 }
-add_filter('domegis_api_data', 'register_domegis_data');
+
+function arp_get_domegis_fields() {
+  global $arp_domegis_data;
+  return $arp_domegis_data->get_fields();
+}
 
 ?>

@@ -147,7 +147,9 @@
           var name = $(this).text();
           var id = $(this).parents('.basin-item').attr('id');
           $('.related-stories .basin-posts').hide();
+          $('.domegis-data .basin-data').hide();
           $('.related-stories #basin-' + id + '-posts').show();
+          $('.domegis-data #basin-' + id + '-data').show();
           $('.basin-map')
             .detach();
           maps
@@ -175,7 +177,7 @@
         height: 0
       });
       $('.basin-item.active .basin-description').css({
-        height: $(window).height() - 395
+        height: $(window).height() - 415
       });
     }
   });

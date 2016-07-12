@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amazon-rivers-wptheme 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-07 15:51-0300\n"
+"POT-Creation-Date: 2016-07-12 14:30-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,6 +22,10 @@ msgid "Select a basin for details:"
 msgstr ""
 
 #: archive-basin.php:26
+msgid "Relevant data on"
+msgstr ""
+
+#: archive-basin.php:78
 msgid "Stories on"
 msgstr ""
 
@@ -64,11 +68,31 @@ msgstr ""
 msgid "Archives"
 msgstr ""
 
-#: functions.php:16
+#: functions.php:14
+msgid "Deforested area"
+msgstr ""
+
+#: functions.php:20
+msgid "Deforestation layer ID"
+msgstr ""
+
+#: functions.php:24 functions.php:57
+msgid "Basin layer ID"
+msgstr ""
+
+#: functions.php:47
+msgid "Indigenous lands"
+msgstr ""
+
+#: functions.php:53
+msgid "Indigenous Lands layer ID"
+msgstr ""
+
+#: functions.php:81
 msgid "Header navigation"
 msgstr ""
 
-#: functions.php:17
+#: functions.php:82
 msgid "Footer navigation"
 msgstr ""
 

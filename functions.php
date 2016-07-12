@@ -2,6 +2,71 @@
 
 add_filter('show_admin_bar', '__return_false');
 
+/*
+ * Domegis API Data
+ */
+
+
+function register_domegis_data($data) {
+  // BASIN DEFORESTED AREA
+  $data[] = array(
+    'name' => 'basin_deforested_area',
+    'title' => __('Deforested area', 'arp'),
+    'type' => 'percentage',
+    'post_type' => 'basin',
+    'required_fields' => array(
+      array(
+        'key' => 'deforestation_layer',
+        'name' => __('Deforestation layer ID', 'arp')
+      ),
+      array(
+        'key' => 'basin_layer',
+        'name' => __('Basin layer ID', 'arp')
+      )
+    ),
+    'sql' => 'SELECT layer1.geometry,
+      ROUND(
+        CAST(100.00 * (
+          ST_Area(
+            ST_Intersection(
+              ST_Multi(ST_Union(layer0.geometry)), ST_Multi(ST_Union(layer1.geometry))
+            )::geography
+          ) /
+          ST_Area(
+            ST_Multi(ST_Union(layer1.geometry))::geography
+          )
+        ) as numeric), 2) as percentage
+      FROM %deforestation_layer% as layer0,
+      %basin_layer% as layer1
+      WHERE ST_Intersects(layer0.geometry, layer1.geometry)
+      GROUP BY layer1.domegis_id;'
+  );
+  // BASIN INDIGENOUS LANDS
+  $data[] = array(
+    'name' => 'basin_indigenous_lands',
+    'title' => __('Indigenous lands', 'arp'),
+    'type' => 'list',
+    'post_type' => 'basin',
+    'required_fields' => array(
+      array(
+        'key' => 'indigenous_lands_layer',
+        'name' => __('Indigenous Lands layer ID', 'arp')
+      ),
+      array(
+        'key' => 'basin_layer',
+        'name' => __('Basin layer ID', 'arp')
+      )
+    ),
+    'sql' => 'SELECT layer0.geometry,layer0.name
+      FROM %indigenous_lands_layer% as layer0,
+      %basin_layer% as layer1
+      WHERE ST_Intersects(layer0.geometry, layer1.geometry)
+      GROUP BY layer0.domegis_id;'
+  );
+  return $data;
+}
+add_filter('domegis_api_data', 'register_domegis_data');
+
 function arp_setup_theme() {
 
   load_theme_textdomain('arp', get_template_directory() . '/languages');
@@ -112,3 +177,5 @@ require_once(TEMPLATEPATH . '/inc/video.php');
 require_once(TEMPLATEPATH . '/inc/external-src.php');
 require_once(TEMPLATEPATH . '/inc/library-page.php');
 require_once(TEMPLATEPATH . '/inc/home-page.php');
+
+require_once(TEMPLATEPATH . '/inc/domegis-data.php');
