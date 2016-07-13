@@ -182,6 +182,33 @@
     }
   });
 
+  /*
+   * Basin content sections
+   */
+  $(document).ready(function() {
+    var $container = $('#basin-content');
+    $container.each(function() {
+      var content = $(this);
+      var sections = $(this).find('.basin-content-section');
+      var nav = $(this).find('.basin-content-header h2');
+      sections.hide().first().show();
+      var selectedId = sections.first().attr('id');
+      nav.filter('[data-section="' + selectedId + '"]').addClass('active');
+      nav.on('click', function() {
+        var id = $(this).data('section');
+        nav.removeClass('active');
+        sections.hide();
+        $(this).addClass('active');
+        sections.filter('#' + id).show();
+        if(id == 'basin-domegis-data') {
+          content.addClass('dark expanded');
+        } else {
+          content.removeClass('dark expanded');
+        }
+      });
+    });
+  });
+
   // FitVids
   $(document).ready(function() {
     if($('.article-media').length)
