@@ -14,7 +14,9 @@
           <img src="<?php echo get_template_directory_uri(); ?>/img/wwf.png" />
           <h1 class="title">
             <?php
-            $lang = qtranxf_getLanguage();
+            $lang = '';
+            if(function_exists('qtranxf_getLanguage'))
+              $lang = qtranxf_getLanguage();
             if($lang == 'pb' || $lang == 'pt_BR') :
               ?>
               <a href="<?php echo home_url('/'); ?>">
