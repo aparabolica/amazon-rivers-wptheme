@@ -3,7 +3,7 @@
 <section id="archive">
   <header class="archive-header">
     <div class="container">
-      <div class="nine columns">
+      <div class="twelve columns">
         <h1><?php
           if( is_tag() || is_category() || is_tax() ) :
             printf( __( '%s', 'arp' ), single_term_title() );

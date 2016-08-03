@@ -8,7 +8,7 @@ add_filter('show_admin_bar', '__return_false');
 
 
 function register_domegis_data($data) {
-  // BASIN DEFORESTED AREA
+  // BASIN % OF DEFORESTED AREA
   $data[] = array(
     'name' => 'basin_deforested_area',
     'title' => __('Deforested area', 'arp'),
@@ -41,16 +41,16 @@ function register_domegis_data($data) {
       WHERE ST_Intersects(layer0.geometry, layer1.geometry)
       GROUP BY layer1.domegis_id;'
   );
-  // BASIN INDIGENOUS LANDS
+  // LIST OF ECOREGIONS THAT INTERSECTS WITH BASIN
   $data[] = array(
-    'name' => 'basin_indigenous_lands',
-    'title' => __('Indigenous lands', 'arp'),
+    'name' => 'basin_ecoregions',
+    'title' => __('List of ecoregions', 'arp'),
     'type' => 'list',
     'post_type' => 'basin',
     'required_fields' => array(
       array(
-        'key' => 'indigenous_lands_layer',
-        'name' => __('Indigenous Lands layer ID', 'arp')
+        'key' => 'ecoregions_layer',
+        'name' => __('Ecoregions layer ID', 'arp')
       ),
       array(
         'key' => 'basin_layer',
@@ -58,7 +58,7 @@ function register_domegis_data($data) {
       )
     ),
     'sql' => 'SELECT layer0.geometry,layer0.name
-      FROM %indigenous_lands_layer% as layer0,
+      FROM %ecoregions_layer% as layer0,
       %basin_layer% as layer1
       WHERE ST_Intersects(layer0.geometry, layer1.geometry)
       GROUP BY layer0.domegis_id;'

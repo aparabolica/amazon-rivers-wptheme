@@ -50,7 +50,7 @@ class ARP_DomeGIS_Data {
       );
       foreach($data['required_fields'] as $field) {
         $config['fields'][] = array(
-          'key' => 'field_domegis_data_' . $field['key'],
+          'key' => 'field_domegis_data_' . $data['name'] . '_' . $field['key'],
           'label' => $field['name'],
           'name' => $field['key'],
           'type' => 'text',
