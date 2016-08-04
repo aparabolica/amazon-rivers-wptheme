@@ -167,7 +167,7 @@ function arp_register_required_plugins() {
 add_action('tgmpa_register', 'arp_register_required_plugins');
 
 // ACF Settings
-define( 'ACF_LITE', true );
+// define( 'ACF_LITE', true );
 
 require_once(TEMPLATEPATH . '/inc/page-builder-hooks.php');
 
@@ -177,5 +177,6 @@ require_once(TEMPLATEPATH . '/inc/video.php');
 require_once(TEMPLATEPATH . '/inc/external-src.php');
 require_once(TEMPLATEPATH . '/inc/library-page.php');
 require_once(TEMPLATEPATH . '/inc/home-page.php');
+require_once(TEMPLATEPATH . '/inc/map-page.php');
 
 require_once(TEMPLATEPATH . '/inc/domegis-data.php');

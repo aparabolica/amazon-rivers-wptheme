@@ -59,7 +59,20 @@ class ARP_Library_Page {
         'options' => array (
           'position' => 'normal',
           'layout' => 'no_box',
-          'hide_on_screen' => array (),
+          'hide_on_screen' => array (
+            0 => 'the_content',
+            1 => 'excerpt',
+    				2 => 'custom_fields',
+    				3 => 'discussion',
+    				4 => 'comments',
+    				5 => 'revisions',
+    				6 => 'author',
+    				7 => 'format',
+    				8 => 'featured_image',
+    				9 => 'categories',
+    				10 => 'tags',
+    				11 => 'send-trackbacks',
+          ),
         ),
         'menu_order' => 0,
       ));
