@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the amazon-rivers-wptheme package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amazon-rivers-wptheme 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-18 18:25-0300\n"
+"POT-Creation-Date: 2016-08-05 12:44-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,11 +81,11 @@ msgid "Basin layer ID"
 msgstr ""
 
 #: functions.php:47
-msgid "Indigenous lands"
+msgid "List of ecoregions"
 msgstr ""
 
 #: functions.php:53
-msgid "Indigenous Lands layer ID"
+msgid "Ecoregions layer ID"
 msgstr ""
 
 #: functions.php:81
@@ -96,7 +96,7 @@ msgstr ""
 msgid "Footer navigation"
 msgstr ""
 
-#: header.php:41
+#: header.php:43
 msgid "Search anything..."
 msgstr ""
 
@@ -298,11 +298,11 @@ msgstr ""
 msgid "Enter the url for the button displayed on the home page header."
 msgstr ""
 
-#: inc/home-page.php:95
+#: inc/home-page.php:95 inc/map-page.php:21
 msgid "DomeGIS Map"
 msgstr ""
 
-#: inc/home-page.php:98
+#: inc/home-page.php:98 inc/map-page.php:24
 msgid "Paste the shortcode for a DomeGIS Map."
 msgstr ""
 
