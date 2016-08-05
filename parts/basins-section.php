@@ -36,6 +36,7 @@ if(have_posts()) :
             $basin_posts_query = new WP_Query(array(
               'posts_per_page' => '2',
               'post_type' => 'post',
+              'ignore_sticky_posts' => 1,
               'meta_query' => array(
                 array(
                   'key' => 'related_basins',
