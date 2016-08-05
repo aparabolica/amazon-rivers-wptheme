@@ -149,4 +149,4 @@ class ARP_Basins {
 
 }
 
-new ARP_Basins();
+$arp_basins = new ARP_Basins();
