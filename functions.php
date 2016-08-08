@@ -167,7 +167,7 @@ function arp_register_required_plugins() {
 add_action('tgmpa_register', 'arp_register_required_plugins');
 
 // ACF Settings
-// define( 'ACF_LITE', true );
+define( 'ACF_LITE', true );
 
 require_once(TEMPLATEPATH . '/inc/page-builder-hooks.php');
 
