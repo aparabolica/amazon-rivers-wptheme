@@ -213,6 +213,8 @@
   $(document).ready(function() {
     if($('.article-media').length)
       $('.article-media').fitVids();
+    if($('#story-map').length)
+      $('#story-map').fitVids();
   });
 
 })(jQuery);

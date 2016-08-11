@@ -6,15 +6,19 @@
 <?php get_header(); ?>
 
 <article id="page">
-  <header class="page-header">
-    <div class="container">
-      <div class="twelve columns">
-        <section id="story-map">
-          <iframe frameborder="0" src="<?php echo arp_get_story_map_url(); ?>"></iframe>
-        </section>
+  <?php
+  $story_map = arp_get_story_map_url();
+  if($story_map) : ?>
+    <header class="page-header">
+      <div class="container">
+        <div class="twelve columns">
+          <section id="story-map">
+            <?php echo arp_get_story_map(); ?>
+          </section>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
+  <?php endif; ?>
   <?php
   query_posts('posts_per_page=3&category_name=news');
   if(have_posts()) :

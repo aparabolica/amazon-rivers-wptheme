@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amazon-rivers-wptheme 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-05 12:44-0300\n"
+"POT-Creation-Date: 2016-08-10 21:49-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -108,7 +108,7 @@ msgstr ""
 msgid "Connect with us"
 msgstr ""
 
-#: homepage.php:71 library.php:25
+#: homepage.php:71 library.php:29
 msgid "Latest news"
 msgstr ""
 
@@ -266,7 +266,7 @@ msgstr ""
 msgid "Enter the URL in which this content has been originally published."
 msgstr ""
 
-#: inc/home-page.php:49 inc/library-page.php:31
+#: inc/home-page.php:49 inc/library-page.php:49
 msgid "Library Page Settings"
 msgstr ""
 
@@ -306,12 +306,13 @@ msgstr ""
 msgid "Paste the shortcode for a DomeGIS Map."
 msgstr ""
 
-#: inc/library-page.php:35
-msgid "Story Map URL"
+#: inc/library-page.php:53
+msgid "Story Map or Video URL"
 msgstr ""
 
-#: inc/library-page.php:38
-msgid "Enter the story map url for embed on the library page."
+#: inc/library-page.php:56
+msgid ""
+"Enter the story map url or YouTube video url for embed on the library page."
 msgstr ""
 
 #: inc/video.php:35 inc/video.php:39
@@ -322,25 +323,25 @@ msgstr ""
 msgid "Enter the video url for this post. It can be from YouTube or Vimeo."
 msgstr ""
 
-#: library.php:57
+#: library.php:61
 msgid "Publications"
 msgstr ""
 
-#: library.php:82
+#: library.php:86
 msgid "Stay tuned"
 msgstr ""
 
-#: library.php:91
+#: library.php:95
 msgid ""
 "Help stop the degradation of our planet's natural environment, and build a "
 "future in which people live in harmony with nature."
 msgstr ""
 
-#: library.php:92
+#: library.php:96
 msgid "Take action"
 msgstr ""
 
-#: library.php:101
+#: library.php:105
 msgid "Videos"
 msgstr ""
 
@@ -348,7 +349,7 @@ msgstr ""
 msgid "Select another basin:"
 msgstr ""
 
-#: parts/basins-section.php:67
+#: parts/basins-section.php:68
 msgid "Learn more about"
 msgstr ""
 

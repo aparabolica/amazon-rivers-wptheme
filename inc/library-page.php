@@ -24,6 +24,24 @@ class ARP_Library_Page {
     return get_field('story_map_url', $post_id);
   }
 
+  function get_story_map_type($post_id = false) {
+    $url = $this->get_story_map_url($post_id);
+    if(strpos($url, 'youtube') > 0) {
+      return 'youtube';
+    } else {
+      return 'iframe';
+    }
+  }
+
+  function get_story_map($post_id = false) {
+    $url = $this->get_story_map_url($post_id);
+    if(strpos($url, 'youtube') > 0) {
+      return apply_filters('the_content', $url);
+    } else {
+      return '<iframe frameborder="0" src="' . $url . '"></iframe>';
+    }
+  }
+
   function register_field_group() {
     if(function_exists("register_field_group")) {
       register_field_group(array (
@@ -32,10 +50,10 @@ class ARP_Library_Page {
         'fields' => array (
           array (
             'key' => 'field_story_map_url',
-            'label' => __('Story Map URL', 'arp'),
+            'label' => __('Story Map or Video URL', 'arp'),
             'name' => 'story_map_url',
             'type' => $this->get_text_field(),
-            'instructions' => __('Enter the story map url for embed on the library page.', 'arp'),
+            'instructions' => __('Enter the story map url or YouTube video url for embed on the library page.', 'arp'),
             'required' => 0,
             'default_value' => '',
             'placeholder' => '',
@@ -85,4 +103,14 @@ $arp_library_page = new ARP_Library_Page();
 function arp_get_story_map_url($post_id = false) {
   global $arp_library_page;
   return $arp_library_page->get_story_map_url($post_id);
+}
+
+function arp_get_story_map_type($post_id = false) {
+  global $arp_library_page;
+  return $arp_library_page->get_story_map_type($post_id);
+}
+
+function arp_get_story_map($post_id = false) {
+  global $arp_library_page;
+  return $arp_library_page->get_story_map($post_id);
 }
