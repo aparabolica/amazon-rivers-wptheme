@@ -8,16 +8,25 @@
 <article id="page">
   <?php
   $story_map = arp_get_story_map_url();
+  $story_map_type = arp_get_story_map_type();
   if($story_map) : ?>
-    <header class="page-header">
-      <div class="container">
-        <div class="twelve columns">
-          <section id="story-map">
-            <?php echo arp_get_story_map(); ?>
-          </section>
+    <?php if($story_map_type == 'iframe') : ?>
+      <header class="page-header">
+        <div class="container">
+          <div class="twelve columns">
+            <section id="story-map">
+              <?php echo arp_get_story_map(); ?>
+            </section>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
+    <?php elseif($story_map_type == 'youtube') : ?>
+      <header class="page-header video">
+        <section id="story-map" class="video">
+          <?php echo arp_get_story_map(); ?>
+        </section>
+      </header>
+    <?php endif; ?>
   <?php endif; ?>
   <?php
   query_posts('posts_per_page=3&category_name=news');
