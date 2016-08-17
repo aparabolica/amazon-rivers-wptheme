@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amazon-rivers-wptheme 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-10 21:49-0300\n"
+"POT-Creation-Date: 2016-08-17 12:53-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -108,7 +108,7 @@ msgstr ""
 msgid "Connect with us"
 msgstr ""
 
-#: homepage.php:71 library.php:29
+#: homepage.php:71 library.php:38
 msgid "Latest news"
 msgstr ""
 
@@ -323,25 +323,25 @@ msgstr ""
 msgid "Enter the video url for this post. It can be from YouTube or Vimeo."
 msgstr ""
 
-#: library.php:61
+#: library.php:70
 msgid "Publications"
 msgstr ""
 
-#: library.php:86
+#: library.php:95
 msgid "Stay tuned"
 msgstr ""
 
-#: library.php:95
+#: library.php:104
 msgid ""
 "Help stop the degradation of our planet's natural environment, and build a "
 "future in which people live in harmony with nature."
 msgstr ""
 
-#: library.php:96
+#: library.php:105
 msgid "Take action"
 msgstr ""
 
-#: library.php:105
+#: library.php:114
 msgid "Videos"
 msgstr ""
 
