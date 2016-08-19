@@ -23,30 +23,41 @@
     </div>
   </header>
   <section class="archive-content">
-    <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
-      <article id="post-<?php the_ID(); ?>">
-        <div class="container">
-          <div class="eight columns">
-            <p class="type">
-              <?php
-              $type = get_post_type();
-              if($type !== 'post')
-                echo get_post_type();
-              else
-                the_category(' ');
-              ?>
-            </p>
-            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-            <?php the_excerpt(); ?>
-          </div>
-          <?php if(has_post_thumbnail()) : ?>
-            <div class="four columns">
-              <?php the_post_thumbnail(); ?>
+    <?php if(have_posts()) : ?>
+      <?php while(have_posts()) : the_post(); ?>
+        <article id="post-<?php the_ID(); ?>">
+          <div class="container">
+            <div class="eight columns">
+              <?php if(!is_post_type_archive() && !is_category()) : ?>
+                <p class="type">
+                  <?php
+                  $type = get_post_type();
+                  if($type !== 'post')
+                    echo get_post_type();
+                  else
+                    the_category(' ');
+                  ?>
+                </p>
+              <?php endif; ?>
+              <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+              <?php the_excerpt(); ?>
             </div>
-          <?php endif; ?>
-        </div>
-      </article>
-    <?php endwhile; endif; ?>
+            <?php if(has_post_thumbnail()) : ?>
+              <div class="four columns">
+                <?php the_post_thumbnail(); ?>
+              </div>
+            <?php endif; ?>
+          </div>
+        </article>
+      <?php endwhile; ?>
+      <nav class="posts-nav">
+        <?php posts_nav_link(); ?>
+      </nav>
+    <?php else : ?>
+      <div class="container">
+        <h3 style="text-align:center;text-transform:uppercase"><?php _e('No content was found', 'pra'); ?></h3>
+      </div>
+    <?php endif; ?>
   </section>
 </section>
 
