@@ -17,6 +17,13 @@ class ARP_Home_Page {
     }
     return $field;
   }
+  function get_wysiwyg_field() {
+    $field = 'wysiwyg';
+    if(function_exists('qtranxf_generateLanguageSelectCode')) {
+      $field = 'qtranslate_wysiwyg';
+    }
+    return $field;
+  }
 
   function get_headline($post_id = false) {
     global $post;
@@ -66,7 +73,7 @@ class ARP_Home_Page {
             'key' => 'field_headline_description',
             'label' => __('Description', 'arp'),
             'name' => 'headline_description',
-            'type' => $this->get_text_field(),
+            'type' => $this->get_wysiwyg_field(),
             'instructions' => __('Enter the headline description to your project (displayed on the home page header).', 'arp'),
             'required' => 0,
             'default_value' => '',

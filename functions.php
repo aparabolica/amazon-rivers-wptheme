@@ -140,12 +140,6 @@ require_once(TEMPLATEPATH . '/inc/class-tgm-plugin-activation.php');
 function arp_register_required_plugins() {
   $plugins = array(
     array(
-      'name' => 'Advanced Custom Fields',
-      'slug' => 'advanced-custom-fields',
-      'required' => true,
-      'force_activation' => true
-    ),
-    array(
       'name' => 'DomeGIS',
       'slug' => 'domegis-wordpress-plugin',
       'required' => true,
@@ -153,6 +147,15 @@ function arp_register_required_plugins() {
       'source' => 'https://github.com/ecodigital/domegis-wordpress-plugin/archive/master.zip'
     )
   );
+  if(defined('ACF_PRO_KEY')) {
+    $plugins[] = array(
+      'name' => 'Advanced Custom Fields PRO',
+      'slug' => 'acf-pro',
+      'required' => true,
+      'force_activation' => true,
+      'source' => 'https://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=' . ACF_PRO_KEY
+    );
+  }
   $options = array(
     'default_path'  => '',
     'menu'      => 'arp-install-plugins',
