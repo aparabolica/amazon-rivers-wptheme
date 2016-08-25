@@ -2,6 +2,17 @@
 
 ## WordPress Theme
 
+## Installation
+
+You must have an ACF PRO licence.
+
+Once you acquired the licence, add this line to your `wp-config.php` file:
+
+```php
+define('ACF_PRO_KEY', 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
+```
+
+
 ### Home page
 
 The home page should display:
