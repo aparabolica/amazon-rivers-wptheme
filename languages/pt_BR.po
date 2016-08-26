@@ -1,18 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the amazon-rivers-wptheme package.
 #
 # Translators:
 # Miguel Peixe <miguspeixe@gmail.com>, 2016
 # Stefano Biagioni Wrobleski <stefano@infoamazonia.org>, 2016
 # Vitor George <vitor.george@gmail.com>, 2016
+# VJ pixel <pixel@memelab.com.br>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Amazon Rivers Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-20 13:47-0300\n"
-"PO-Revision-Date: 2016-06-20 13:53-0300\n"
-"Last-Translator: Miguel Peixe <miguel@cardume.art.br>\n"
+"POT-Creation-Date: 2016-08-19 12:47-0300\n"
+"PO-Revision-Date: 2016-08-26 11:23-0300\n"
+"Last-Translator: Vitor George <vitor.george@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/ecologia-"
 "digital/amazon-rivers-project/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
@@ -20,15 +21,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: pt_BR\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.8.7.1\n"
 
 #: archive-basin.php:13
 msgid "Select a basin for details:"
 msgstr "Selecione uma bacia para ver detalhes:"
 
-#: archive-basin.php:26
-msgid "Stories on"
-msgstr "Artigos sobre"
+#: archive-basin.php:27
+msgid "Stories"
+msgstr "Histórias"
+
+#: archive-basin.php:28
+msgid "Relevant data"
+msgstr "Dados relevantes"
 
 #: archive.php:9 index.php:9
 #, php-format
@@ -53,7 +58,7 @@ msgstr "Arquivos mensais: %s"
 #: archive.php:15 index.php:15
 msgctxt "monthly archives date format"
 msgid "F Y"
-msgstr ""
+msgstr "F \\d\\e Y"
 
 #: archive.php:17 index.php:17
 #, php-format
@@ -63,21 +68,45 @@ msgstr "Arquivos anuais: %s"
 #: archive.php:17 index.php:17
 msgctxt "yearly archives date format"
 msgid "Y"
-msgstr ""
+msgstr "Y"
 
 #: archive.php:19 index.php:19
 msgid "Archives"
 msgstr "Arquivos"
 
-#: functions.php:16
+#: archive.php:58
+msgid "No content was found"
+msgstr "Nenhum conteúdo foi encontrado"
+
+#: functions.php:14
+msgid "Deforested area"
+msgstr "Área deflorestada"
+
+#: functions.php:20
+msgid "Deforestation layer ID"
+msgstr "ID da camada de deflorestamento"
+
+#: functions.php:24 functions.php:57
+msgid "Basin layer ID"
+msgstr "ID da camada de bacia"
+
+#: functions.php:47
+msgid "List of ecoregions"
+msgstr "Lista de ecorregiões"
+
+#: functions.php:53
+msgid "Ecoregions layer ID"
+msgstr "ID de camada de ecorregiões"
+
+#: functions.php:81
 msgid "Header navigation"
 msgstr "Cabeçalho de navegação"
 
-#: functions.php:17
+#: functions.php:82
 msgid "Footer navigation"
 msgstr "Rodapé de navegação"
 
-#: header.php:41
+#: header.php:43
 msgid "Search anything..."
 msgstr "Busque qualquer coisa..."
 
@@ -85,80 +114,80 @@ msgstr "Busque qualquer coisa..."
 msgid "Learn more"
 msgstr "Saiba mais"
 
-#: homepage.php:64
+#: homepage.php:65
 msgid "Connect with us"
 msgstr "Conecte-se conosco"
 
-#: homepage.php:70 library.php:25
+#: homepage.php:71 library.php:38
 msgid "Latest news"
 msgstr "Últimas notícias"
 
-#: homepage.php:92
+#: homepage.php:93
 msgid "Amazon River Basins"
 msgstr "Bacias de rios da Amazônia"
 
-#: inc/basins.php:18
+#: inc/basins.php:26
 msgctxt "post type general name"
 msgid "Basins"
 msgstr "Bacias"
 
-#: inc/basins.php:19
+#: inc/basins.php:27
 msgctxt "post type singular name"
 msgid "Basin"
 msgstr "Bacia"
 
-#: inc/basins.php:20
+#: inc/basins.php:28
 msgctxt "admin menu"
 msgid "Basins"
 msgstr "Bacias"
 
-#: inc/basins.php:21
+#: inc/basins.php:29
 msgctxt "add new on admin bar"
 msgid "Basin"
 msgstr "Bacia"
 
-#: inc/basins.php:22
+#: inc/basins.php:30
 msgctxt "basin"
 msgid "Add new"
 msgstr "Adicionar nova"
 
-#: inc/basins.php:23
+#: inc/basins.php:31
 msgid "Add new basin"
 msgstr "Adicionar nova bacia"
 
-#: inc/basins.php:24
+#: inc/basins.php:32
 msgid "New basin"
 msgstr "Nova bacia"
 
-#: inc/basins.php:25
+#: inc/basins.php:33
 msgid "Edit basin"
 msgstr "Editar bacia"
 
-#: inc/basins.php:26
+#: inc/basins.php:34
 msgid "View basin"
 msgstr "Visualizar bacia"
 
-#: inc/basins.php:27
+#: inc/basins.php:35
 msgid "All basins"
 msgstr "Todas as bacias"
 
-#: inc/basins.php:28
+#: inc/basins.php:36
 msgid "Search basins"
 msgstr "Buscar bacias"
 
-#: inc/basins.php:29
+#: inc/basins.php:37
 msgid "Parent basins:"
 msgstr "Bacias matrizes:"
 
-#: inc/basins.php:30
+#: inc/basins.php:38
 msgid "No basins found."
 msgstr "Nenhuma bacia encontrada."
 
-#: inc/basins.php:31
+#: inc/basins.php:39
 msgid "No basins found in Trash."
 msgstr "Nenhuma bacia encontrada na Lixeira."
 
-#: inc/basins.php:36
+#: inc/basins.php:44
 msgid "ARP Basins"
 msgstr "Bacias ARP"
 
@@ -247,7 +276,7 @@ msgstr "URL de fonte externa"
 msgid "Enter the URL in which this content has been originally published."
 msgstr "Digite a URL na qual este conteúdo foi originalmente publicado."
 
-#: inc/home-page.php:49 inc/library-page.php:31
+#: inc/home-page.php:49 inc/library-page.php:49
 msgid "Library Page Settings"
 msgstr "Configurações da página de Acervo"
 
@@ -283,21 +312,24 @@ msgstr "URL \"Saiba mais\""
 msgid "Enter the url for the button displayed on the home page header."
 msgstr "Digite a URL para o botão exibido no cabeçalho da página inicial."
 
-#: inc/home-page.php:95
+#: inc/home-page.php:95 inc/map-page.php:21
 msgid "DomeGIS Map"
 msgstr "Mapa DomeGIS"
 
-#: inc/home-page.php:98
+#: inc/home-page.php:98 inc/map-page.php:24
 msgid "Paste the shortcode for a DomeGIS Map."
 msgstr "Cole o shortcode de um mapa DomeGIS."
 
-#: inc/library-page.php:35
-msgid "Story Map URL"
-msgstr "URL do Story Map"
+#: inc/library-page.php:53
+msgid "Story Map or Video URL"
+msgstr "URL de Story Map ou Vídeo"
 
-#: inc/library-page.php:38
-msgid "Enter the story map url for embed on the library page."
-msgstr "Digite a URL do Story Map para incorporar na página de Acervo."
+#: inc/library-page.php:56
+msgid ""
+"Enter the story map url or YouTube video url for embed on the library page."
+msgstr ""
+"Insira a URL do Story Map ou vídeo do Youtube para inserção na página de "
+"biblioteca"
 
 #: inc/video.php:35 inc/video.php:39
 msgid "Video URL"
@@ -309,15 +341,15 @@ msgstr ""
 "Digite a URL de vídeo para esta postagem. Pode ser um vídeo do YouTube ou "
 "Vimeo."
 
-#: library.php:57
+#: library.php:70
 msgid "Publications"
 msgstr "Publicações"
 
-#: library.php:82
+#: library.php:95
 msgid "Stay tuned"
 msgstr "Acompanhe"
 
-#: library.php:91
+#: library.php:104
 msgid ""
 "Help stop the degradation of our planet's natural environment, and build a "
 "future in which people live in harmony with nature."
@@ -325,11 +357,11 @@ msgstr ""
 "Ajude a deter a degradação ambiental no nosso planeta e construa um futuro "
 "no qual as pessoas vivam em harmonia com a natureza "
 
-#: library.php:92
+#: library.php:105
 msgid "Take action"
 msgstr "Faça parte"
 
-#: library.php:101
+#: library.php:114
 msgid "Videos"
 msgstr "Vídeos"
 
@@ -337,7 +369,7 @@ msgstr "Vídeos"
 msgid "Select another basin:"
 msgstr "Selecione outra bacia:"
 
-#: parts/basins-section.php:67
+#: parts/basins-section.php:68
 msgid "Learn more about"
 msgstr "Saiba mais sobre"
 
