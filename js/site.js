@@ -215,6 +215,8 @@
       $('.article-media').fitVids();
     if($('#story-map').length)
       $('#story-map').fitVids();
+    if($('.article-content').length)
+      $('.article-content').fitVids();
   });
 
 })(jQuery);
