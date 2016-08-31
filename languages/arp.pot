@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amazon-rivers-wptheme 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-19 12:47-0300\n"
+"POT-Creation-Date: 2016-08-31 16:04-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -270,43 +270,43 @@ msgstr ""
 msgid "Enter the URL in which this content has been originally published."
 msgstr ""
 
-#: inc/home-page.php:49 inc/library-page.php:49
+#: inc/home-page.php:56 inc/library-page.php:49
 msgid "Library Page Settings"
 msgstr ""
 
-#: inc/home-page.php:53
+#: inc/home-page.php:60
 msgid "Headline"
 msgstr ""
 
-#: inc/home-page.php:56
+#: inc/home-page.php:63
 msgid ""
 "Enter the introduction title to your project (displayed on the home page "
 "header)."
 msgstr ""
 
-#: inc/home-page.php:67
+#: inc/home-page.php:74
 msgid "Description"
 msgstr ""
 
-#: inc/home-page.php:70
+#: inc/home-page.php:77
 msgid ""
 "Enter the headline description to your project (displayed on the home page "
 "header)."
 msgstr ""
 
-#: inc/home-page.php:81
+#: inc/home-page.php:88
 msgid "\"Learn more\" URL"
 msgstr ""
 
-#: inc/home-page.php:84
+#: inc/home-page.php:91
 msgid "Enter the url for the button displayed on the home page header."
 msgstr ""
 
-#: inc/home-page.php:95 inc/map-page.php:21
+#: inc/home-page.php:102 inc/map-page.php:21
 msgid "DomeGIS Map"
 msgstr ""
 
-#: inc/home-page.php:98 inc/map-page.php:24
+#: inc/home-page.php:105 inc/map-page.php:24
 msgid "Paste the shortcode for a DomeGIS Map."
 msgstr ""
 
