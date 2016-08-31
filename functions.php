@@ -150,7 +150,7 @@ function arp_register_required_plugins() {
   if(defined('ACF_PRO_KEY')) {
     $plugins[] = array(
       'name' => 'Advanced Custom Fields PRO',
-      'slug' => 'acf-pro',
+      'slug' => 'advanced-custom-fields-pro',
       'required' => true,
       'force_activation' => true,
       'source' => 'https://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=' . ACF_PRO_KEY
