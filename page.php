@@ -24,7 +24,7 @@
     </header>
     <section class="page-content">
       <div class="container">
-        <div class="eight columns">
+        <div class="eight columns offset-by-two">
           <?php the_content(); ?>
         </div>
       </div>
