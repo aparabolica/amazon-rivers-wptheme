@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amazon-rivers-wptheme 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-31 16:04-0300\n"
+"POT-Creation-Date: 2016-09-10 17:56-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,46 +29,46 @@ msgstr ""
 msgid "Relevant data"
 msgstr ""
 
-#: archive.php:9 index.php:9
+#: archive.php:14 archive.php:16 index.php:9
 #, php-format
 msgid "%s"
 msgstr ""
 
-#: archive.php:11 index.php:11
+#: archive.php:20 index.php:11
 #, php-format
 msgid "Search results for: %s"
 msgstr ""
 
-#: archive.php:13 index.php:13
+#: archive.php:22 index.php:13
 #, php-format
 msgid "Daily Archives: %s"
 msgstr ""
 
-#: archive.php:15 index.php:15
+#: archive.php:24 index.php:15
 #, php-format
 msgid "Monthly Archives: %s"
 msgstr ""
 
-#: archive.php:15 index.php:15
+#: archive.php:24 index.php:15
 msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr ""
 
-#: archive.php:17 index.php:17
+#: archive.php:26 index.php:17
 #, php-format
 msgid "Yearly Archives: %s"
 msgstr ""
 
-#: archive.php:17 index.php:17
+#: archive.php:26 index.php:17
 msgctxt "yearly archives date format"
 msgid "Y"
 msgstr ""
 
-#: archive.php:19 index.php:19
+#: archive.php:28 index.php:19
 msgid "Archives"
 msgstr ""
 
-#: archive.php:58
+#: archive.php:89
 msgid "No content was found"
 msgstr ""
 

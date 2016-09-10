@@ -6,7 +6,16 @@
       <div class="twelve columns">
         <h1><?php
           if( is_tag() || is_category() || is_tax() ) :
-            printf( __( '%s', 'arp' ), single_term_title() );
+            $term = get_queried_object();
+            $link = get_term_link($term);
+            if($term->parent) :
+              $parent = get_term($term->parent);
+              $link = get_term_link($parent);
+              $title = sprintf( __( '%s', 'arp' ), $parent->name );
+            else :
+              $title = sprintf( __( '%s', 'arp' ), single_term_title() );
+            endif;
+            echo '<a href="' . $link . '">' . $title . '</a>';
           elseif( is_search() ) :
             printf( __( 'Search results for: %s', 'arp' ), $_GET['s'] );
           elseif ( is_day() ) :
@@ -19,6 +28,28 @@
             _e( 'Archives', 'arp' );
           endif;
         ?></h1>
+        <?php
+        if(is_category() || is_tax()) :
+          if($parent)
+            $children = get_term_children($parent->term_id, $term->taxonomy);
+          else
+            $children = get_term_children($term->term_id, $term->taxonomy);
+          if($children) :
+            ?>
+            <nav id="term-children">
+              <ul>
+                <?php foreach($children as $child) :
+                  $child_term = get_term($child, $term->taxonomy);
+                  $active = $child_term->term_id == $term->term_id;
+                  ?>
+                  <li class="<?php if($active) echo 'active'; ?>"><a href="<?php echo get_term_link($child); ?>"><?php echo $child_term->name; ?></a></li>
+                <?php endforeach; ?>
+              </ul>
+            </nav>
+            <?php
+          endif;
+        endif;
+        ?>
       </div>
     </div>
   </header>
