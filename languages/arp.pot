@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amazon-rivers-wptheme 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-10 17:56-0300\n"
+"POT-Creation-Date: 2016-09-10 18:49-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -108,15 +108,15 @@ msgstr ""
 msgid "Learn more"
 msgstr ""
 
-#: homepage.php:65
+#: homepage.php:67
 msgid "Connect with us"
 msgstr ""
 
-#: homepage.php:71 library.php:38
+#: homepage.php:73 library.php:38
 msgid "Latest news"
 msgstr ""
 
-#: homepage.php:93
+#: homepage.php:95
 msgid "Amazon River Basins"
 msgstr ""
 

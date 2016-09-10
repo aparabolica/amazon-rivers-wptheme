@@ -42,25 +42,37 @@
     if(carousels.length) {
       carousels.each(function() {
         var carousel = $(this);
-        carousel.find('.carousel-item').hide();
-        carousel.find('nav a').on('click', function(e) {
-          e.preventDefault();
-          clearInterval(rotateInterval);
-          var postID = $(this).data('postid');
-          carousel.find('nav a').removeClass('active');
-          carousel.find('.carousel-item').hide();
-          $(this).addClass('active');
-          carousel.find('.carousel-item[data-postid="' + postID + '"]').show();
-          rotateInterval = setInterval(rotate, 8000);
-        });
-        var rotate = function() {
-          if(carousel.find('nav a.active').next('a').length)
-            carousel.find('nav a.active').next('a').click();
-          else
-            carousel.find('nav a:first').click();
+        var updateHeight = function() {
+          var heights = [];
+          carousel.find('.carousel-item').each(function() {
+            heights.push($(this).height());
+          });
+          carousel.find('.carousel-items').height(Math.max.apply(Math, heights));
         };
-        var rotateInterval = setInterval(rotate, 8000);
-        carousel.find('nav a:first').click();
+        // carousel.on('load', function() {
+        window.onload = function() {
+          updateHeight();
+          $(window).resize(updateHeight);
+          carousel.find('.carousel-item').removeClass('active');
+          carousel.find('nav a').on('click', function(e) {
+            e.preventDefault();
+            clearInterval(rotateInterval);
+            var postID = $(this).data('postid');
+            carousel.find('nav a').removeClass('active');
+            carousel.find('.carousel-item').removeClass('active');
+            $(this).addClass('active');
+            carousel.find('.carousel-item[data-postid="' + postID + '"]').addClass('active');
+            rotateInterval = setInterval(rotate, 8000);
+          });
+          var rotate = function() {
+            if(carousel.find('nav a.active').next('a').length)
+            carousel.find('nav a.active').next('a').click();
+            else
+            carousel.find('nav a:first').click();
+          };
+          var rotateInterval = setInterval(rotate, 8000);
+          carousel.find('nav a:first').click();
+        };
       });
     }
   });

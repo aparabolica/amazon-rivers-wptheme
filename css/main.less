@@ -503,11 +503,13 @@ input[type='submit'] {
 }
 
 #carousel {
-  background: #fff;
   // padding: 5px;
   margin: -9rem 0 6rem;
   box-shadow: 0 0 0 15px rgba(255,255,255,0.1);
   position: relative;
+  .carousel-items {
+    position: relative;
+  }
   .carousel-nav {
     position: absolute;
     top: 0;
@@ -539,7 +541,15 @@ input[type='submit'] {
     z-index: 100;
   }
   .carousel-item {
-    position: relative;
+    visibility: hidden;
+    pointer-events: none;
+    &.active {
+      visibility: visible;
+      pointer-events: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
     .carousel-item-meta {
       margin: 2rem 0 0;
       h2 {

@@ -96,7 +96,7 @@ function arp_scripts() {
 
   wp_register_script('fitvids', get_template_directory_uri() . '/assets/jquery.fitvids/jquery.fitvids.js', array('jquery'));
   wp_register_script('perfect-scrollbar', get_template_directory_uri() . '/assets/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js', array('jquery'));
-  wp_register_script('site', get_template_directory_uri() . '/js/site.js', array('jquery', 'fitvids', 'perfect-scrollbar'), '0.1.2');
+  wp_register_script('site', get_template_directory_uri() . '/js/site.js', array('jquery', 'fitvids', 'perfect-scrollbar'), '0.1.3');
 
   wp_enqueue_style('main');
   wp_enqueue_script('site');
