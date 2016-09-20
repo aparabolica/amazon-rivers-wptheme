@@ -71,6 +71,9 @@
                 </p>
               <?php endif; ?>
               <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+              <aside class="post-meta">
+                <p class="date"><span class="fa fa-calendar"></span> <?php echo get_the_date(); ?></p>
+              </aside>
               <?php the_excerpt(); ?>
             </div>
             <?php if(has_post_thumbnail()) : ?>
@@ -86,7 +89,7 @@
       </nav>
     <?php else : ?>
       <div class="container">
-        <h3 style="text-align:center;text-transform:uppercase"><?php _e('No content was found', 'pra'); ?></h3>
+        <h3 style="text-align:center;text-transform:uppercase"><?php _e('No content was found', 'arp'); ?></h3>
       </div>
     <?php endif; ?>
   </section>
