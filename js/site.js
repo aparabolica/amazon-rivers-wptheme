@@ -225,8 +225,8 @@
   $(document).ready(function() {
     if($('.article-media').length)
       $('.article-media').fitVids();
-    if($('#story-map').length)
-      $('#story-map').fitVids();
+      if($('#story-map.video').length)
+      $('#story-map.video').fitVids();
     if($('.article-content').length)
       $('.article-content').fitVids();
   });
