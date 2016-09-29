@@ -177,7 +177,11 @@
             sel.find('.basin-item').removeClass('active');
           }
           updateHeight();
-          history.replaceState(undefined, undefined, '#' + id);
+          if(history.replaceState) {
+            history.replaceState(undefined, undefined, '#' + id);
+          } else {
+            location.replace('#' + id);
+          }
         });
         if(basin) {
           sel.find('#' + basin + ' h2').click();
