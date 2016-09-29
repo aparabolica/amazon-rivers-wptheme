@@ -139,6 +139,8 @@
           iframe.class = 'active';
           iframe.width = $iframe.width();
           iframe.height = $iframe.height();
+          iframe.frameborder = 0;
+          iframe.allowfullscreen = true;
           iframe.src = $iframe.attr('src');
 
           basins.find('.map')[0].appendChild(iframe);
