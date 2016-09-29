@@ -33,7 +33,7 @@
       ?>
       <section class="article-media">
         <div class="container">
-          <div class="twelve columns">
+          <div class="ten columns offset-by-one">
             <div class="media-content">
               <?php
               if($video) :
