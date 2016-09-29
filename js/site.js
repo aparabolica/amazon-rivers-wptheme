@@ -177,6 +177,7 @@
             sel.find('.basin-item').removeClass('active');
           }
           updateHeight();
+          history.replaceState(undefined, undefined, '#' + id);
         });
         if(basin) {
           sel.find('#' + basin + ' h2').click();
