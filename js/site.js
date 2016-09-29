@@ -133,12 +133,12 @@
           //   .addClass('active')
           //   .show();
 
-          var $iframe = maps.filter('.basin-map[data-postid="' + id + '"]')[0];
+          var $iframe = maps.filter('.basin-map[data-postid="' + id + '"]');
           var iframe = document.createElement('IFRAME');
           iframe.width = $iframe.width();
           iframe.height = $iframe.height();
           iframe.class = 'active';
-          iframe.src = $iframe.src();
+          iframe.src = $iframe.attr('src');
 
           basins.find('.map')[0].appendChild(iframe);
 
