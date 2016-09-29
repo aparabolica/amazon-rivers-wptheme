@@ -127,23 +127,23 @@
             .addClass('active')
             .show();
 
-          // maps
-          //   .filter('.basin-map[data-postid="' + id + '"]')
-          //   .appendTo(basins.find('.map'))
-          //   .addClass('active')
-          //   .show();
+          maps
+            .filter('.basin-map[data-postid="' + id + '"]')
+            .appendTo(basins.find('.map'))
+            .addClass('active')
+            .show();
 
-          var $iframe = maps.filter('.basin-map[data-postid="' + id + '"] iframe');
-          console.log($iframe);
-          var iframe = document.createElement('iframe');
-          iframe.class = 'active';
-          iframe.width = $iframe.width();
-          iframe.height = $iframe.height();
-          iframe.frameborder = 0;
-          iframe.allowfullscreen = true;
-          iframe.src = $iframe.attr('src');
-
-          basins.find('.map')[0].appendChild(iframe);
+          // var $iframe = maps.filter('.basin-map[data-postid="' + id + '"] iframe');
+          // console.log($iframe);
+          // var iframe = document.createElement('iframe');
+          // iframe.class = 'active';
+          // iframe.width = $iframe.width();
+          // iframe.height = $iframe.height();
+          // iframe.frameborder = 0;
+          // iframe.allowfullscreen = true;
+          // iframe.src = $iframe.attr('src');
+          //
+          // basins.find('.map .basin-map[data-postid="' + id + '"]')[0].appendChild(iframe);
 
           $(this).hide().addClass('active');
 
