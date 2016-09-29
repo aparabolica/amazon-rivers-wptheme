@@ -126,11 +126,21 @@
             .find('.excerpt[data-postid="' + id + '"], .posts[data-postid="' + id + '"], .basin-map[data-postid="' + id + '"]')
             .addClass('active')
             .show();
-          maps
-            .filter('.basin-map[data-postid="' + id + '"]')
-            .appendTo(basins.find('.map'))
-            .addClass('active')
-            .show();
+
+          // maps
+          //   .filter('.basin-map[data-postid="' + id + '"]')
+          //   .appendTo(basins.find('.map'))
+          //   .addClass('active')
+          //   .show();
+
+          var $iframe = maps.filter('.basin-map[data-postid="' + id + '"]')[0];
+          var iframe = document.createElement('IFRAME');
+          iframe.width = $iframe.width();
+          iframe.height = $iframe.height();
+          iframe.class = 'active';
+          iframe.src = $iframe.src();
+
+          basins.find('.map')[0].appendChild(iframe);
 
           $(this).hide().addClass('active');
 
