@@ -133,7 +133,7 @@
           //   .addClass('active')
           //   .show();
 
-          var $iframe = maps.filter('.basin-map[data-postid="' + id + '"]');
+          var $iframe = maps.filter('.basin-map[data-postid="' + id + '"] iframe');
           console.log($iframe);
           var iframe = document.createElement('iframe');
           iframe.class = 'active';
