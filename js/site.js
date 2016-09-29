@@ -134,10 +134,11 @@
           //   .show();
 
           var $iframe = maps.filter('.basin-map[data-postid="' + id + '"]');
-          var iframe = document.createElement('IFRAME');
+          console.log($iframe);
+          var iframe = document.createElement('iframe');
+          iframe.class = 'active';
           iframe.width = $iframe.width();
           iframe.height = $iframe.height();
-          iframe.class = 'active';
           iframe.src = $iframe.attr('src');
 
           basins.find('.map')[0].appendChild(iframe);
