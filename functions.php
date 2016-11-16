@@ -92,7 +92,7 @@ function arp_scripts() {
   wp_register_style('skeleton', get_template_directory_uri() . '/assets/skeleton/css/skeleton.css');
   wp_register_style('fontawesome', get_template_directory_uri() . '/assets/fontawesome/css/font-awesome.min.css');
   wp_register_style('perfect-scrollbar', get_template_directory_uri() . '/assets/perfect-scrollbar/css/perfect-scrollbar.min.css');
-  wp_register_style('main', get_template_directory_uri() . '/css/main.css', array('webfont-raleway', 'normalize', 'skeleton', 'fontawesome', 'perfect-scrollbar'), '0.1.4');
+  wp_register_style('main', get_template_directory_uri() . '/css/main.css', array('webfont-raleway', 'normalize', 'skeleton', 'fontawesome', 'perfect-scrollbar'), '0.1.5');
 
   wp_register_script('fitvids', get_template_directory_uri() . '/assets/jquery.fitvids/jquery.fitvids.js', array('jquery'));
   wp_register_script('perfect-scrollbar', get_template_directory_uri() . '/assets/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js', array('jquery'));
@@ -181,5 +181,6 @@ require_once(TEMPLATEPATH . '/inc/external-src.php');
 require_once(TEMPLATEPATH . '/inc/library-page.php');
 require_once(TEMPLATEPATH . '/inc/home-page.php');
 require_once(TEMPLATEPATH . '/inc/map-page.php');
+require_once(TEMPLATEPATH . '/inc/story-map-page.php');
 
 require_once(TEMPLATEPATH . '/inc/domegis-data.php');
