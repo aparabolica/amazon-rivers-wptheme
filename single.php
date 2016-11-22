@@ -9,7 +9,9 @@
           <h2><?php the_category(' '); ?></h2>
           <h1><?php the_title(); ?></h1>
           <div class="post-meta">
-            <p class="date"><?php the_date(); ?></p>
+            <?php do_action('arp_pre_single_post_meta'); ?>
+            <?php do_action('arp_post_single_post_meta'); ?>
+            <p class="date"><span class="fa fa-calendar"></span><?php the_date(); ?></p>
           </div>
         </div>
         <div class="three columns">
