@@ -30,6 +30,13 @@
         ?></h1>
         <?php
         if(is_category() || is_tax()) :
+          if($term->description) :
+            ?>
+            <div class="term-description">
+              <?php echo apply_filters('the_content', $term->description); ?>
+            </div>
+            <?php
+          endif;
           if($parent)
             $children = get_term_children($parent->term_id, $term->taxonomy);
           else
@@ -54,18 +61,22 @@
     </div>
   </header>
   <section class="archive-content">
-    <?php if(have_posts()) : ?>
-      <?php while(have_posts()) : the_post(); ?>
-        <?php get_template_part('post', 'list-item'); ?>
-      <?php endwhile; ?>
-      <nav class="posts-nav">
-        <?php posts_nav_link(); ?>
-      </nav>
-    <?php else : ?>
-      <div class="container">
-        <h3 style="text-align:center;text-transform:uppercase"><?php _e('No content was found', 'arp'); ?></h3>
+    <div class="container">
+      <div class="eight columns offset-by-two">
+        <?php if(have_posts()) : ?>
+          <?php while(have_posts()) : the_post(); ?>
+            <?php get_template_part('post', 'list-item'); ?>
+          <?php endwhile; ?>
+          <nav class="posts-nav">
+            <?php posts_nav_link(); ?>
+          </nav>
+        <?php else : ?>
+          <div class="container">
+            <h3 style="text-align:center;text-transform:uppercase"><?php _e('No content was found', 'arp'); ?></h3>
+          </div>
+        <?php endif; ?>
       </div>
-    <?php endif; ?>
+    </div>
   </section>
 </section>
 
