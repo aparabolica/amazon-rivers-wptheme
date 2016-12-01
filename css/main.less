@@ -841,7 +841,8 @@ input[type='submit'] {
       }
     }
   }
-  .article-share {
+  .article-share,
+  .social {
     h3 {
       font-size: 1em;
       line-height: 1.3;
@@ -859,6 +860,22 @@ input[type='submit'] {
       li {
         margin: 0 0 10px;
         padding: 0;
+      }
+    }
+  }
+  .social {
+    .social-content {
+      text-align: center;
+      h3 {
+        text-align: left;
+        padding-bottom: 2rem;
+      }
+      a {
+        font-size: 2em;
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;
+        margin: 0 1rem;
       }
     }
   }
@@ -1199,6 +1216,19 @@ input[type='submit'] {
           padding: 7px;
         }
       }
+    }
+  }
+  .social {
+    text-align: right;
+    h3 {
+      font-size: .9em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.3);
+    }
+    a {
+      display: inline-block;
+      font-size: 2em;
+      margin-left: 1.5rem;
     }
   }
 }
