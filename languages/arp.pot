@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amazon-rivers-wptheme 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-30 17:51-0300\n"
+"POT-Creation-Date: 2016-12-19 12:18-0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,8 +68,12 @@ msgstr ""
 msgid "Archives"
 msgstr ""
 
-#: archive.php:92
+#: archive.php:75
 msgid "No content was found"
+msgstr ""
+
+#: footer.php:11 homepage.php:67 single.php:31
+msgid "Connect with us"
 msgstr ""
 
 #: functions.php:14
@@ -100,7 +104,7 @@ msgstr ""
 msgid "Footer navigation"
 msgstr ""
 
-#: header.php:43
+#: header.php:51
 msgid "Search anything..."
 msgstr ""
 
@@ -108,15 +112,11 @@ msgstr ""
 msgid "Learn more"
 msgstr ""
 
-#: homepage.php:67
-msgid "Connect with us"
-msgstr ""
-
-#: homepage.php:73 library.php:38
+#: homepage.php:85 library.php:38
 msgid "Latest news"
 msgstr ""
 
-#: homepage.php:95
+#: homepage.php:107
 msgid "Amazon River Basins"
 msgstr ""
 
@@ -314,9 +314,33 @@ msgstr ""
 msgid "Story Map or Video URL"
 msgstr ""
 
-#: inc/library-page.php:56
+#: inc/library-page.php:56 inc/story-map-page.php:32
 msgid ""
 "Enter the story map url or YouTube video url for embed on the library page."
+msgstr ""
+
+#: inc/site-options.php:13 inc/site-options.php:23
+msgid "Site options"
+msgstr ""
+
+#: inc/site-options.php:27
+msgid "Facebook URL"
+msgstr ""
+
+#: inc/site-options.php:41
+msgid "Twitter URL"
+msgstr ""
+
+#: inc/site-options.php:55
+msgid "YouTube URL"
+msgstr ""
+
+#: inc/story-map-page.php:25
+msgid "Story Map Settings"
+msgstr ""
+
+#: inc/story-map-page.php:29
+msgid "Story Map URL"
 msgstr ""
 
 #: inc/video.php:35 inc/video.php:39
@@ -335,17 +359,17 @@ msgstr ""
 msgid "Stay tuned"
 msgstr ""
 
-#: library.php:104
+#: library.php:116
 msgid ""
 "Help stop the degradation of our planet's natural environment, and build a "
 "future in which people live in harmony with nature."
 msgstr ""
 
-#: library.php:105
+#: library.php:117
 msgid "Take action"
 msgstr ""
 
-#: library.php:114
+#: library.php:126
 msgid "Videos"
 msgstr ""
 
@@ -357,10 +381,10 @@ msgstr ""
 msgid "Learn more about"
 msgstr ""
 
-#: single.php:17
+#: single.php:19
 msgid "Share this story"
 msgstr ""
 
-#: single.php:59 single.php:68
+#: single.php:80 single.php:89
 msgid "Go to the original post"
 msgstr ""
