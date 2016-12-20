@@ -9,17 +9,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Amazon Rivers Project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-19 12:47-0300\n"
-"PO-Revision-Date: 2016-08-26 11:24-0300\n"
-"Last-Translator: Vitor George <vitor.george@gmail.com>\n"
-"Language-Team: Spanish (http://www.transifex.com/ecologia-digital/amazon-"
-"rivers-project/language/es/)\n"
+"POT-Creation-Date: 2016-12-19 12:18-0200\n"
+"PO-Revision-Date: 2016-12-20 16:40-0200\n"
+"Last-Translator: Miguel Peixe <miguspeixe@gmail.com>\n"
+"Language-Team: Spanish (http://www.transifex.com/ecologia-digital/amazon-rivers-project/language/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"X-Generator: Poedit 1.8.11\n"
 
 #: archive-basin.php:13
 msgid "Select a basin for details:"
@@ -33,48 +32,52 @@ msgstr "Historias"
 msgid "Relevant data"
 msgstr "Datos relevantes"
 
-#: archive.php:9 index.php:9
+#: archive.php:14 archive.php:16 index.php:9
 #, php-format
 msgid "%s"
 msgstr "%s"
 
-#: archive.php:11 index.php:11
+#: archive.php:20 index.php:11
 #, php-format
 msgid "Search results for: %s"
 msgstr "Resultados de la búsqueda para: %s"
 
-#: archive.php:13 index.php:13
+#: archive.php:22 index.php:13
 #, php-format
 msgid "Daily Archives: %s"
 msgstr "Archivos diarios: %s"
 
-#: archive.php:15 index.php:15
+#: archive.php:24 index.php:15
 #, php-format
 msgid "Monthly Archives: %s"
 msgstr "Archivos por mes: %s"
 
-#: archive.php:15 index.php:15
+#: archive.php:24 index.php:15
 msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr "F \\d\\e Y"
 
-#: archive.php:17 index.php:17
+#: archive.php:26 index.php:17
 #, php-format
 msgid "Yearly Archives: %s"
 msgstr "Archivos por año: %s"
 
-#: archive.php:17 index.php:17
+#: archive.php:26 index.php:17
 msgctxt "yearly archives date format"
 msgid "Y"
 msgstr "Y"
 
-#: archive.php:19 index.php:19
+#: archive.php:28 index.php:19
 msgid "Archives"
 msgstr "Archivos"
 
-#: archive.php:58
+#: archive.php:75
 msgid "No content was found"
 msgstr "No se encontró contenido"
+
+#: footer.php:11 homepage.php:67 single.php:31
+msgid "Connect with us"
+msgstr "Conectate con nosotros"
 
 #: functions.php:14
 msgid "Deforested area"
@@ -104,7 +107,7 @@ msgstr "Navegación del título"
 msgid "Footer navigation"
 msgstr "Navegación de pie de página"
 
-#: header.php:43
+#: header.php:51
 msgid "Search anything..."
 msgstr "Buscar a algo..."
 
@@ -112,15 +115,11 @@ msgstr "Buscar a algo..."
 msgid "Learn more"
 msgstr "Aprende más"
 
-#: homepage.php:65
-msgid "Connect with us"
-msgstr "Conectate con nosotros"
-
-#: homepage.php:71 library.php:38
+#: homepage.php:85 library.php:38
 msgid "Latest news"
 msgstr "Últimas noticias"
 
-#: homepage.php:93
+#: homepage.php:107
 msgid "Amazon River Basins"
 msgstr "Cuencas de río de la Amazonia"
 
@@ -272,52 +271,41 @@ msgstr "URL de origen externo"
 
 #: inc/external-src.php:38
 msgid "Enter the URL in which this content has been originally published."
-msgstr ""
-"Introduzca la URL en la que este contenido ha sido publicado originalmente."
+msgstr "Introduzca la URL en la que este contenido ha sido publicado originalmente."
 
-#: inc/home-page.php:49 inc/library-page.php:49
+#: inc/home-page.php:56 inc/library-page.php:49
 msgid "Library Page Settings"
 msgstr "Configuración de la página de Biblioteca"
 
-#: inc/home-page.php:53
+#: inc/home-page.php:60
 msgid "Headline"
 msgstr "Título"
 
-#: inc/home-page.php:56
-msgid ""
-"Enter the introduction title to your project (displayed on the home page "
-"header)."
-msgstr ""
-"Informe el título de introducción de su proyecto (aparecerá en el encabezado "
-"de la página inicial)"
+#: inc/home-page.php:63
+msgid "Enter the introduction title to your project (displayed on the home page header)."
+msgstr "Informe el título de introducción de su proyecto (aparecerá en el encabezado de la página inicial)"
 
-#: inc/home-page.php:67
+#: inc/home-page.php:74
 msgid "Description"
 msgstr "Descripción"
 
-#: inc/home-page.php:70
-msgid ""
-"Enter the headline description to your project (displayed on the home page "
-"header)."
-msgstr ""
-"Introduzca el título de su proyecto (aparecerá en el encabezado de la página "
-"de inicio)."
+#: inc/home-page.php:77
+msgid "Enter the headline description to your project (displayed on the home page header)."
+msgstr "Introduzca el título de su proyecto (aparecerá en el encabezado de la página de inicio)."
 
-#: inc/home-page.php:81
+#: inc/home-page.php:88
 msgid "\"Learn more\" URL"
 msgstr "URL de \"Más información\""
 
-#: inc/home-page.php:84
+#: inc/home-page.php:91
 msgid "Enter the url for the button displayed on the home page header."
-msgstr ""
-"Introduzca la URL para el botón que aparece en el encabezado de la página "
-"principal."
+msgstr "Introduzca la URL para el botón que aparece en el encabezado de la página principal."
 
-#: inc/home-page.php:95 inc/map-page.php:21
+#: inc/home-page.php:102 inc/map-page.php:21
 msgid "DomeGIS Map"
 msgstr "Mapa de DomeGIS"
 
-#: inc/home-page.php:98 inc/map-page.php:24
+#: inc/home-page.php:105 inc/map-page.php:24
 msgid "Paste the shortcode for a DomeGIS Map."
 msgstr "Pegar el código corto para obtener un mapa DomeGIS."
 
@@ -325,12 +313,33 @@ msgstr "Pegar el código corto para obtener un mapa DomeGIS."
 msgid "Story Map or Video URL"
 msgstr "Mapa de Historias o URL de Video"
 
-#: inc/library-page.php:56
-msgid ""
-"Enter the story map url or YouTube video url for embed on the library page."
-msgstr ""
-"Introduzca la URL del mapa de historias o la URL de video YouTube para "
-"embedar en la página de la biblioteca."
+#: inc/library-page.php:56 inc/story-map-page.php:32
+msgid "Enter the story map url or YouTube video url for embed on the library page."
+msgstr "Introduzca la URL del mapa de historias o la URL de video YouTube para embedar en la página de la biblioteca."
+
+#: inc/site-options.php:13 inc/site-options.php:23
+msgid "Site options"
+msgstr "Opciones del sitio"
+
+#: inc/site-options.php:27
+msgid "Facebook URL"
+msgstr "URL de Facebook"
+
+#: inc/site-options.php:41
+msgid "Twitter URL"
+msgstr "URL de Twitter"
+
+#: inc/site-options.php:55
+msgid "YouTube URL"
+msgstr "URL de YouTube"
+
+#: inc/story-map-page.php:25
+msgid "Story Map Settings"
+msgstr "Configuración de Story Map"
+
+#: inc/story-map-page.php:29
+msgid "Story Map URL"
+msgstr "URL de Story Map"
 
 #: inc/video.php:35 inc/video.php:39
 msgid "Video URL"
@@ -338,8 +347,7 @@ msgstr "URL de video"
 
 #: inc/video.php:42
 msgid "Enter the video url for this post. It can be from YouTube or Vimeo."
-msgstr ""
-"Introduzca la URL de video para este post. Puede ser de YouTube o Vimeo."
+msgstr "Introduzca la URL de video para este post. Puede ser de YouTube o Vimeo."
 
 #: library.php:70
 msgid "Publications"
@@ -349,19 +357,15 @@ msgstr "Publicaciones"
 msgid "Stay tuned"
 msgstr "Seguir"
 
-#: library.php:104
-msgid ""
-"Help stop the degradation of our planet's natural environment, and build a "
-"future in which people live in harmony with nature."
-msgstr ""
-"Ayuda a detener la degradación del medio ambiente de nuestro planeta y a "
-"construir un futuro en el que la gente viva en armonía con la naturaleza."
+#: library.php:116
+msgid "Help stop the degradation of our planet's natural environment, and build a future in which people live in harmony with nature."
+msgstr "Ayuda a detener la degradación del medio ambiente de nuestro planeta y a construir un futuro en el que la gente viva en armonía con la naturaleza."
 
-#: library.php:105
+#: library.php:117
 msgid "Take action"
 msgstr "Tomar acción"
 
-#: library.php:114
+#: library.php:126
 msgid "Videos"
 msgstr "Videos"
 
@@ -373,10 +377,10 @@ msgstr "Seleccione otra cuenca:"
 msgid "Learn more about"
 msgstr "Aprenda más acerca de"
 
-#: single.php:17
+#: single.php:19
 msgid "Share this story"
 msgstr "Compartir esta historia"
 
-#: single.php:59 single.php:68
+#: single.php:80 single.php:89
 msgid "Go to the original post"
 msgstr "Ir a la publicación original"
