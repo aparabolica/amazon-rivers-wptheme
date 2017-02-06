@@ -175,6 +175,7 @@ add_action('tgmpa_register', 'arp_register_required_plugins');
 require_once(TEMPLATEPATH . '/inc/page-builder-hooks.php');
 
 require_once(TEMPLATEPATH . '/inc/site-options.php');
+require_once(TEMPLATEPATH . '/inc/custom-featured-image.php');
 require_once(TEMPLATEPATH . '/inc/carousel.php');
 require_once(TEMPLATEPATH . '/inc/basins.php');
 require_once(TEMPLATEPATH . '/inc/video.php');
