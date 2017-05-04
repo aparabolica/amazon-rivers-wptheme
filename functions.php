@@ -184,5 +184,6 @@ require_once(TEMPLATEPATH . '/inc/library-page.php');
 require_once(TEMPLATEPATH . '/inc/home-page.php');
 require_once(TEMPLATEPATH . '/inc/map-page.php');
 require_once(TEMPLATEPATH . '/inc/story-map-page.php');
+require_once(TEMPLATEPATH . '/inc/embed-page.php');
 
 require_once(TEMPLATEPATH . '/inc/domegis-data.php');

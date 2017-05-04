@@ -1,10 +1,10 @@
 <?php
 
 /*
- * ARP Story Map Page
+ * ARP Embed Page
  */
 
-class ARP_Story_Map_Page {
+class ARP_Embed_Page {
 
   function __construct() {
     add_action('init', array($this, 'register_field_group'));
@@ -21,15 +21,15 @@ class ARP_Story_Map_Page {
   function register_field_group() {
     if(function_exists("register_field_group")) {
       register_field_group(array (
-        'id' => 'acf_story_map_page_settings',
-        'title' => __('Story Map Settings', 'arp'),
+        'id' => 'acf_embed_page_settings',
+        'title' => __('Embed Page Settings', 'arp'),
         'fields' => array (
           array (
-            'key' => 'field_story_map_page',
-            'label' => __('Story Map URL', 'arp'),
-            'name' => 'story_map_url',
-            'type' => $this->get_text_field(),
-            'instructions' => __('Enter the story map url or YouTube video url for embed on the library page.', 'arp'),
+            'key' => 'field_embed_page_url',
+            'label' => __('Embed Page URL', 'arp'),
+            'name' => 'embed_url',
+            'type' => 'text',
+            'instructions' => __('Enter the web page url for embed.', 'arp'),
             'required' => 0,
             'default_value' => '',
             'placeholder' => '',
@@ -44,7 +44,7 @@ class ARP_Story_Map_Page {
             array (
               'param' => 'page_template',
               'operator' => '==',
-              'value' => 'story-map.php',
+              'value' => 'embed-page.php',
               'order_no' => 0,
               'group_no' => 0,
             ),
@@ -74,4 +74,4 @@ class ARP_Story_Map_Page {
   }
 }
 
-$arp_story_map_page = new ARP_Story_Map_Page();
+$arp_embed_page = new ARP_Embed_Page();
