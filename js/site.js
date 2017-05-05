@@ -207,7 +207,7 @@
         height: 0
       });
       $('.basin-item.active .basin-description').css({
-        height: $(window).height() - 415
+        height: $(window).height() - 553
       });
     }
   });
