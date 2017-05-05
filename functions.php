@@ -144,7 +144,7 @@ function arp_register_required_plugins() {
       'slug' => 'domegis-wordpress-plugin',
       'required' => true,
       'force_activation' => false,
-      'source' => 'https://github.com/ecodigital/domegis-wordpress-plugin/archive/master.zip'
+      'source' => 'https://github.com/aparabolica/domegis-wordpress-plugin/archive/master.zip'
     )
   );
   if(defined('ACF_PRO_KEY')) {
