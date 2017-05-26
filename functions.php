@@ -65,7 +65,7 @@ function register_domegis_data($data) {
   );
   return $data;
 }
-add_filter('domegis_api_data', 'register_domegis_data');
+//add_filter('domegis_api_data', 'register_domegis_data');
 
 function arp_setup_theme() {
 
